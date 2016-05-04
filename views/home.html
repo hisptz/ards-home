@@ -1,0 +1,46 @@
+<div  style="margin-top:125px!important;padding-left:10px;" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="{{leftColumn}}" >
+                <d2-left-bar></d2-left-bar>
+            </div>
+            <div class="{{centerColumn}}">
+                <div class="col-md-12 col-sm-12" >
+                    <div class="col-md-12 col-sm-12">
+                        <div class="row" >
+                            <div id="page_switcher">
+                                <div class="onoffswitch pull-right">
+                                    <input type="checkbox" class="toggleBtn onoffswitch-checkbox" checked="" id="onoffswitch6" ng-click="toggleToCMS()">
+                                    <label for="onoffswitch6" class="onoffswitch-label">
+                                        <div class="onoffswitch-inner" style=""></div>
+                                        <div class="onoffswitch-switch" style="">
+                                        </div>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <home-tabs
+                                current-tab="currentTab"
+                                tab-object="tabs"
+                        >
+
+                            <!--tab-content-object="tabContents"-->
+                        </home-tabs>
+                        <div ng-include="'views/partials/homeArticleContent.html'"></div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-12">
+                <home-right-menu
+                        message-object="messages"
+                        chart-object="charts"
+                >
+                </home-right-menu>
+            </div>
+        </div>
+    </div>
+</div>

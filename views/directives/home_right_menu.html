@@ -1,0 +1,52 @@
+<div >
+    <style>
+        #chart1{
+            height:300px!important;
+        }
+
+        .menu_conteiner{
+            font-family: LiberationSans, arial, sans-serif;
+            line-height: 140%;
+        }
+    </style>
+    <div class="row" ng-show="messages">
+        <div class="col-md-12 menu_conteiner">
+            <br/>
+                <div >
+                    <p ng-repeat="message in messages" style="border: 1px solid #cccccc;padding:10px;border-radius:5px;">
+                            <span  ng-if="$index==0">
+                                {{message.first_message}}
+                            </span>&nbsp;
+                        <span  ng-if="$index==1">
+                                {{message.second_message}}
+                            </span>&nbsp;
+                        <br/>
+                        <br/>
+                    </p>
+
+                </div>
+        </div>
+    </div>
+    <div class="row" ng-show="!messages&&!errorSms">
+        <div class="col-md-12 menu_conteiner">
+            <div ><img src="images/chartloader.gif" style="width:50px;margin-left: 40%;"></div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12 menu_conteiner" >
+            <div class="row">
+                <div style="text-align: center;font-family: LiberationSans, arial, sans-serif;line-height: 140%;"><b> <u>Favourites Charts</u> </b></div><br/>
+            </div>
+            <div  ng-repeat="chart in charts" ng-if="chartCount>0&&$index<3"><a href="/dhis-web-visualizer/index.html?id={{chart.id}}" target="_blank" ><img src="/api/charts/{{chart.id}}/data?width=210&amp;height=250" title="Click to explore "></a><br/></div>
+            <div ng-show="chartCount==0&&!errors"><img src="images/chartloader.gif" style="width:50px;margin-left: 40%;"></div>
+            <div ng-show="errors" style="text-align: center;">
+                <a class="alert alert-warning">{{errorMessage}} </a>
+            </div>
+            <br/>
+            <br/>
+        </div>
+
+    </div>
+
+</div>
