@@ -1,0 +1,37 @@
+<div class="row">
+    <!--{{tabContents}}-->
+    <div class="tab-content" id="content">
+        <div class="row" ng-if="!tabContents&&!contentsCounts[currentTabCapitaize]"><img src="images/holizontal_preloader.gif" ></div>
+        <div class="row " ng-repeat="content in tabContents" ng-show="content.category==currentTabCapitaize&&content.shown">
+
+            <div >
+                <div  class="col-md-12  conteiner" ng-bind-html="content.content" >
+
+                </div>
+            </div>
+        </div>
+        <div class="row " ng-repeat="content in tabContents" ng-show="currentTabCapitaize=='All'&&content.shown">
+            <div >
+                <div  class="col-md-12  conteiner" ng-bind-html="content.content" >
+                </div>
+            </div>
+        </div>
+        <div ng-if="currentTabCapitaize!='All'&&contentsCounts[currentTabCapitaize]==0">
+
+            <div  class="col-md-12  conteiner" style="min-height:300px;text-align: center;">
+                <p style="margin-top: 150px!important;font-weight:bolder;font-size: 27px;color: #cccccc;">{{'NO ARTICLES FOR '}} {{currentTabCapitaize|uppercase}} {{' CURRENTLY'}}</p>
+            </div>
+
+        </div>
+        <div ng-if="currentTabCapitaize=='All'&&contentsCounts['All']==0">
+
+            <div  class="col-md-12  conteiner" style="min-height:300px;text-align: center;">
+                <p style="margin-top: 150px!important;font-weight:bolder;font-size: 27px;color: #cccccc;">{{'NO ANY ARTICLE CURRENTLY'}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+

@@ -1,21 +1,21 @@
 {
     "version": "0.1",
-    "name": "Home",
-    "description": "Home Page",
+    "name": "ARDS HOME",
+    "description": "ARDS HOME",
     "launch_path": "index.html",
     "icons": {
-        "16": "/img/icon.png",
-        "48": "/img/icon.png",
-        "128": "/img/icon.png"
+        "16": "/img/icons/mortar-16.png",
+        "48": "/img/icons/mortar-48.png",
+        "128": "/img/icons/mortar-128.png"
     },
     "developer": {
-        "name": "Leonard Mpande from HISP Tanzania",
-        "url": "http://hisptanzania.org"
+        "name": "HISP",
+        "url": "http://dhis2.org"
     },
     "default_locale": "en",
     "activities": {
         "dhis": {
-            "href": "../../.."
+            "href": ".."
         }
     }
 }

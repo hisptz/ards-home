@@ -1,114 +1,37 @@
+<div class="row" id="leftbarcontents" style="padding-right: 0px;padding-left: 0px">
+    <div id="left-Menu">
+        <accordion close-others="oneAtATime">
+            <accordion-group heading="Data Analysis" is-open="true" panel-class="panel-success" >
+                <accordion-group heading="{{tables.name}}" ng-repeat="tables in reportTables" >
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ng-repeat="tableItem in tables.values" style="padding: 8px 4px" class="menuitem listmenu" allstring="{{tableItem.displayName}}">
+                            <a style="padding-left: 0px; padding-right: 0px" href="#/analysis?id={{tableItem.id}}" id="{{tableItem.id}}" class="text-success">
+                                {{tableItem.shortName}}
+                                <i class="fa fa-chevron-right pull-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </accordion-group>
+            </accordion-group>
+            <accordion-group heading="Documents" >
+                <ul class="nav nav-pills nav-stacked list-group document_panel" style="padding: 5px 5px;">
+                <li class="list-group-item" ng-repeat="document in documents">
+                <td>
+                <a title="View Document(Download)" target="_blank" href="{{document.url}}" class="text-success">
+                <span class="fa fa-globe"></span>&nbsp;&nbsp;{{document.name}}</a>
+                </td>
+                </li>
+                </ul>
+            </accordion-group>
+            <accordion-group heading="Links">
+                <ul class="nav nav-pills nav-stacked list-group" style=" margin-left: 0;padding-left: 0em;text-indent: -0.1em;">
+                <li class="list-group-item" ng-repeat="external in externalLinks track by $index" >
+                <a target="_blank" href="{{external.url}}" class="text-success">
+                <i class="fa fa-globe"></i>&nbsp;&nbsp;{{external.name}}</a>
+                </li>
+                </ul>
+            </accordion-group>
+        </accordion>
 
-<!--<div id="leftBar" >-->
-    <!--<style>-->
-        <!--.accordion-group{-->
-            <!--margin-bottom: 2px;-->
-            <!--border: 1px solid #e5e5e5;-->
-            <!-- -webkit-border-radius: 4px;-->
-            <!-- -moz-border-radius: 4px;-->
-            <!--border-radius: 4px;-->
-        <!--}-->
-    <!--</style>-->
-    <!--<div class="panel panel-success">-->
-        <!--<div class="panel-heading">-->
-            <!--<h4 class="panel-title">-->
-                <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="parent_menu">-->
-                    <!--Data Analysis-->
-                <!--</a>-->
-            <!--</h4>-->
-        <!--</div>-->
-        <!--<div id="collapseOne" class="panel-collapse collapse in">-->
-            <!--<div class="panel-body">-->
-                <!--<ul class="nav nav-pills nav-stacked">-->
-                    <!--<li class="active">-->
-                        <!--<div class="accordion" id="accordion1">-->
-                            <!--<div class="accordion-group" ng-repeat="favourites in analysis">-->
-                                <!--<div class="accordion-heading">-->
-                                    <!--<h6 class="panel-title" style="padding: 5px 5px;font-size: 10pt">-->
-                                        <!--<a class="text-success accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOneItem0">-->
-                                            <!--<i class="fa fa-chevron-circle-down pull-right"></i>-->
-                                            <!--&lt;!&ndash;Agriculture&ndash;&gt;-->
-                                            <!--{{favourites.name}}-->
-                                        <!--</a>-->
-                                    <!--</h6>-->
-                                <!--</div>-->
-                                <!--<div id="collapseOneItem0" class="accordion-body collapse">-->
-                                    <!--<div class="accordion-inner">-->
-                                        <!--<ul class="nav nav-pills nav-stacked">-->
-                                            <!--<li style="padding: 8px 4px" class="menuitem listmenu" allstring="Eneo, Aina na Misimu ya Ulimaji">-->
-                                                <!--<a style="padding-left: 0px; padding-right: 0px" href="#" id="juMoj5O4Qw9" class="text-success">-->
-                                                    <!--Eneo, Aina na Misimu...-->
-                                                    <!--<i class="fa fa-chevron-right pull-right"></i>-->
-                                                <!--</a>-->
-                                            <!--</li>-->
-                                            <!--<li style="padding: 8px 4px" class="menuitem listmenu" allstring="Hali ya Chakula Vijijini">-->
-                                                <!--<a style="padding-left: 0px; padding-right: 0px" href="#" id="ZuznHGcadLF" class="text-success">-->
-                                                    <!--Hali ya Chakula Viji...-->
-                                                    <!--<i class="fa fa-chevron-right pull-right"></i>-->
-                                                <!--</a>-->
-                                            <!--</li>-->
-                                            <!--<li style="padding: 8px 4px" class="menuitem listmenu" allstring="Maeneo ya Kilimo">-->
-                                                <!--<a style="padding-left: 0px; padding-right: 0px" href="#" id="kjvvizACdYm" class="text-success">-->
-                                                    <!--Maeneo ya Kilimo...-->
-                                                    <!--<i class="fa fa-chevron-right pull-right">-->
-
-                                                    <!--</i>-->
-                                                <!--</a>-->
-                                            <!--</li>-->
-                                        <!--</ul>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
-
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="panel panel-success">-->
-        <!--<div class="panel-heading">-->
-            <!--<h4 class="panel-title">-->
-                <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="parent_menu">-->
-                    <!--Documents-->
-                <!--</a>-->
-            <!--</h4>-->
-        <!--</div>-->
-        <!--<div id="collapseTwo" class="panel-collapse collapse in">-->
-            <!--<div class="panel-body">-->
-
-                <!--<ul class="nav nav-pills nav-stacked list-group document_panel">-->
-                <!--</ul>-->
-                <!--<div ng-if="!documents&&!error">-->
-                    <!--<img src="images/chartloader.gif" style="width:50px;margin-left: 30%;">-->
-                <!--</div>-->
-                <!--<div ng-if="!documents&&error">-->
-                    <!--<p class="alert alert-warning"> no documents</p>-->
-                <!--</div>-->
-                <!--<br>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="panel panel-success">-->
-        <!--<div class="panel-heading">-->
-            <!--<h4 class="panel-title">-->
-                <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="parent_menu">-->
-                    <!--Links-->
-                <!--</a>-->
-            <!--</h4>-->
-        <!--</div>-->
-        <!--<div id="collapseThree" class="panel-collapse collapse in">-->
-            <!--<div class="panel-body">-->
-                <!--<ul class="nav nav-pills nav-stacked list-group" style=" margin-left: 0;padding: 0em;text-indent: -0.1em;font-size:9pt;">-->
-                    <!--<li class="list-group-item" style="padding:0px 0px !important;" ng-repeat="link in externalLinks">-->
-                        <!--<a target="_blank" href="{{link.url}}" class="text-success">-->
-                            <!--<i class="fa fa-globe"></i>&nbsp;&nbsp;{{link.name}}</a>-->
-                    <!--</li>-->
-
-
-
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+    </div>
+</div>

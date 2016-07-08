@@ -4,7 +4,7 @@
 
 var homeDirectives = angular.module('homeDirectives', []);
 
-homeDirectives.directive("homeRightMenu", function(){
+homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
     return {
         restrict: "E",
         replace: true,
@@ -15,40 +15,68 @@ homeDirectives.directive("homeRightMenu", function(){
         templateUrl: "views/directives/home_right_menu.html",
         link: function($scope, element, attrs) {
             $scope.errors  = false;
+            $scope.errorsThree  = false;
             $scope.errorSms  = false;
-            $scope.errorMessage  = "no charts found";
-            $scope.charts = null;
-            $scope.chartCount = 0;
 
-            $scope.$watch('chartObject', function(newchartObject, oldchartObject){
-             if(typeof newchartObject=="undefined" || newchartObject.length ==0){
-                 $scope.errors = true;
-                 $scope.chartCount = 0;
-                 $scope.charts = [];
-             }else{
-                 $scope.charts = newchartObject;
-                 $scope.errors = false;
-                 $scope.chartCount = 1;
-             }
-            }, true);
 
             $scope.$watch('messageObject', function(newmessageObject, oldmessageObject){
+
                 $scope.messages = newmessageObject;
                 if(!$scope.messages){
                     $scope.errorSms = true;
                 }
             }, true);
 
+            $scope.$watch('chartObject', function(newChartObject, oldChartObject){
+                if(typeof newChartObject != "undefined"){
+
+                }
+            }, true);
+
+
+            $scope.checkStatus = function( messages ) {
+                var status = true;
+                var messageLength = 0;
+                if(messages){
+                    messageLength = messages.length;
+                }
+
+
+                if(messageLength==1){
+                    if(messages[0].hidden){
+                        return false;
+                    }
+                }if(messageLength==0){
+                    return false;
+                }else{
+                    var test = 0;
+                    angular.forEach(messages,function(valueS,indexS){
+                        if(valueS.hidden){
+                            test++;
+                        }
+                    })
+
+                    if(test==2){
+                        return false;
+                    }
+                }
+
+
+
+                return status;
+            }
+
+
         }
     };
-});
-homeDirectives.directive("homeLeftMenu", function(){
+}]);
+
+homeDirectives.directive("homeLeftMenu", ['homeService','utilityService',function(homeService,utilityService){
     return {
         restrict: "E",
         replace: true,
         scope: {
-            analysisObject: "=analysisObject",
-            otherLinksObject: "=otherLinksObject",
+            reportTables: "=reportTables",
             documentObject: "=documentObject",
         },
         templateUrl: "views/directives/home_left_menu.html",
@@ -56,29 +84,52 @@ homeDirectives.directive("homeLeftMenu", function(){
             $scope.error  = false;
             $scope.errorMessage  = "no document found";
 
-            $scope.$watch('documentObject', function(newdocumentObject, olddocumentObject){
-                $scope.documents = newdocumentObject;
-                if(newdocumentObject==false){
-                    $scope.error = true;
+            $scope.loadExternalLinks = function(){
+
+                homeService.listExternalLink().then(function(response){
+                    $scope.externalLinks = response;
+                });
+            }
+
+
+            // get report tables
+            $scope.getReportTable = function () {
+
+                if(localStorage.getItem('reportTables')){
+                    $scope.reportTables = utilityService.prepareReportTables(JSON.parse(localStorage.getItem('reportTables')));
+                }else{
+
+                    homeService.getReportTables().then(function(data){
+                        $scope.reportTables = utilityService.prepareReportTables(data.reportTables);
+                        localStorage.setItem('reportTables',JSON.stringify(data.reportTables));
+                    },function(error){
+
+                    });
                 }
-            }, true);
 
 
-            $scope.$watch('otherLinksObject', function(newotherLinksObject, oldotherLinksObject){
-                $scope.externalLinks = newotherLinksObject;
-            }, true);
+            }
+
+            $scope.getReportTable();
 
 
 
-            $scope.$watch('analysisObject', function(newanalysisObject, oldanalysisObject){
-                $scope.analysis = newanalysisObject;
-            }, true);
+            $scope.loadExternalLinks = function(){
+
+                homeService.listExternalLink().then(function(response){
+                    $scope.externalLinks = response;
+                });
+            }
+
+
+            $scope.loadExternalLinks();
+            $scope.getReportTable();
 
         }
     };
-});
+}]);
 
-homeDirectives.directive("homeTabs", function($stateParams){
+homeDirectives.directive("homeTabs", function(){
     return {
         restrict: "E",
         replace: true,
@@ -86,6 +137,7 @@ homeDirectives.directive("homeTabs", function($stateParams){
             currentTab: "=currentTab",
             tabObject: "=tabObject",
             tabContentObject: "=tabContentObject",
+            showCms: "=showCms",
         },
         templateUrl: "views/directives/home_tabs.html",
         link: function($scope, element, attrs) {
@@ -97,10 +149,6 @@ homeDirectives.directive("homeTabs", function($stateParams){
                 $scope.tabContents = newtabContentObject;
             }, true);
 
-
-
-
-
             $scope.$watch('tabObject', function(newtabObject, oldtabObject){
 
                 if(newtabObject!=null){
@@ -108,12 +156,14 @@ homeDirectives.directive("homeTabs", function($stateParams){
                     angular.forEach($scope.tabs,function(tab){
                         var name = tab.value.toLowerCase();
                         tab.name = name;
-                        $scope.homeTabActiveClass[name] = {active:""};
+                        $scope.homeTabActiveClass[tab.value] = {active:""};
                         if(name==$scope.currentTab){
-                            $scope.homeTabActiveClass[name].active = "current";
+                            $scope.homeTabActiveClass[tab.value].active = "current";
                         }
                     })
+
                 }
+
 
             }, true);
 
@@ -129,31 +179,31 @@ homeDirectives.directive("homeTabs", function($stateParams){
 
             function orderTabs(tabArray){
                 var tabs = []
+                var tabs = [{value: "All",active:"current"}]
                 angular.forEach(tabArray,function(value){
-
-                    if(value.value=="All"){
-                        tabs[0]=value;
+                    if(value=="All"){
+                        tabs[0].value=value;
                     }
 
-                    if(value.value=="Agriculture"){
-                        tabs[1]=value;
+                    if(value=="Agriculture"){
+                        tabs[1]={value: value,active:""};
                         if(tabs[0]==null){
                             tabs[0] = {value: "All",active:"current"}
                         }
                     }
-                    if(value.value=="Livestock"){
-                        tabs[2]=value;
+                    if(value=="Livestock"){
+                        tabs[2]={value: value,active:""};
                         if(tabs[1]==null){
                             tabs[1] = {value: "Agriculture",active:""}
                         }
                     }
-                    if(value.value=="Fisheries"){
-                        tabs[3]=value;
+                    if(value=="Fisheries"){
+                        tabs[3]={value: value,active:""};
                         if(tabs[2]==null){
                             tabs[2] = {value: "Livestock",active:""}
                         }
-                    }if(value.value=="Trade"){
-                        tabs[4]=value;
+                    }if(value=="Trade"){
+                        tabs[4]={value: value,active:""};
                         if(tabs[3]==null){
                             tabs[3] = {value: "Fisheries",active:""}
                         }
@@ -163,6 +213,12 @@ homeDirectives.directive("homeTabs", function($stateParams){
 
                 return tabs;
             }
+
+
+            $scope.switchPage = function(){
+                window.location.href = '/demo/api/apps/cms/index.html';
+            }
+
 
         }
     };

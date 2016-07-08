@@ -1,40 +1,38 @@
-<div  style="margin-top:125px!important;padding-left:10px;" >
-    <div class="container-fluid">
-        <div class="row">
-            <div class="{{leftColumn}}" >
-                <d2-left-bar></d2-left-bar>
-            </div>
-            <div class="{{centerColumn}}">
-                <div class="col-md-12 col-sm-12" >
-                    <div class="col-md-12 col-sm-12">
-                        <div class="row" >
-                            <div id="page_switcher">
-                                <div class="onoffswitch pull-right">
-                                    <input type="checkbox" class="toggleBtn onoffswitch-checkbox" checked="" id="onoffswitch6" ng-click="toggleToCMS()">
-                                    <label for="onoffswitch6" class="onoffswitch-label">
-                                        <div class="onoffswitch-inner" style=""></div>
-                                        <div class="onoffswitch-switch" style="">
-                                        </div>
-                                    </label>
-                                </div>
+<span id="showLeftBar" class="hideInPrint" style="margin-top: 20px;">
+    <a href="javascript:dhis2.leftBar.showAnimated()" title="$i18n.getString('show_menu' )"><i class="fa fa-arrow-right leftBarIcon"></i></a>
+</span>
 
-                            </div>
-                        </div>
-                        <home-tabs
-                                current-tab="currentTab"
-                                tab-object="tabs"
-                        >
+<div id="leftBar" style="width:240px!important;">
 
-                            <!--tab-content-object="tabContents"-->
-                        </home-tabs>
-                        <div ng-include="'views/partials/homeArticleContent.html'"></div>
+    <d2-left-bar></d2-left-bar>
+
+    <div id="leftContainer" style="height:100%;">
+
+        <home-left-menu report-tables="analysis"></home-left-menu>
+
+    </div>
+
+</div>
 
 
-                    </div>
-                </div>
-            </div>
+<div class="page "  id="mainPage" style="margin-left: 270px;">
+<br/>
+<br/>
+    <div class="row">
+        <div class="col-md-10">
+            <home-tabs ng-if="!showAnalysis"
+                    current-tab="currentTab"
+                    tab-object="tabs"
+                       show-cms="show_cms"
+            >
+            </home-tabs>
+            <div ng-if="showAnalysis" ng-include="'views/partials/analysis.html'"></div>
+            <div ng-if="!showAnalysis" ng-include="'views/partials/homeArticleContent.html'"></div>
 
-            <div class="col-md-2 col-xs-12">
+        </div>
+        <div class="col-md-2">
+            <div id="rightsBar" style="height:100%;display: block;" >
+                <!-- put right menu directive here -->
                 <home-right-menu
                         message-object="messages"
                         chart-object="charts"
@@ -43,4 +41,5 @@
             </div>
         </div>
     </div>
+
 </div>

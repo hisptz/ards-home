@@ -1,0 +1,96 @@
+<!-- ANALYSIS--->
+
+<link rel="stylesheet" type="text/css" href="scripts/analysis/jquery-ui-multiselect/demos/assets/style.css" />
+<link rel="stylesheet" type="text/css" href="scripts/analysis/assets/prettify.css" />
+<script type="text/javascript" src="scripts/analysis/assets/prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="scripts/analysis/jquery-ui-multiselect/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="scripts/analysis/jquery-ui-multiselect/jquery.multiselect.filter.css" />
+<link rel="stylesheet" type="text/css" href="scripts/analysis/jquery-ui-multiselect/demos/assets/prettify.css" />
+<script type="text/javascript" src="scripts/analysis/Highcharts/js/highcharts.js"></script>
+<script type="text/javascript" src="scripts/analysis/Highcharts/js/modules/exporting.js"></script>
+<script type="text/javascript" src="scripts/analysis/Highcharts/js/themes/sand-signika.js"></script>
+<script type="text/javascript" src="scripts/analysis/jquery-ui-multiselect/src/jquery.multiselect.min.js"></script>
+<script type="text/javascript" src="scripts/analysis/jquery-ui-multiselect/src/jquery.multiselect.filter.js"></script>
+<script type="text/javascript" src="scripts/analysis/jquery-ui-multiselect/demos/assets/prettify.js"></script>
+<script type="text/javascript" src="scripts/analysis/orgUnits.js"></script>
+<script type="text/javascript" src="scripts/analysis/periods.js"></script>
+<script type="text/javascript" src="scripts/analysis/data_element.js"></script>
+<script type="text/javascript" src="scripts/analysis/bar.js"></script>
+<script type="text/javascript" src="scripts/analysis/line.js"></script>
+<script type="text/javascript" src="scripts/analysis/column.js"></script>
+<script type="text/javascript" src="scripts/analysis/table.js"></script>
+<script type="text/javascript" src="scripts/analysis/pie.js"></script>
+<script type="text/javascript" src="scripts/analysis/spiderweb.js"></script>
+<script type="text/javascript" src="scripts/analysis/staked.js"></script>
+<script type="text/javascript" src="scripts/analysis/data_analysis1.js"></script>
+<script type="text/javascript" src="scripts/analysis/buildmenu.js"></script>
+
+<!-- ANALYSIS--->
+
+
+<div ng-controller="analysisController">
+    <div class="col-sm-12">
+        <div class="alert alert-danger fade in" role="alert" style="padding: 4px">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            <strong>Empty Value!</strong> Please select at least one Administrative unit, period and data.
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                Administrative units <br>
+                <div class="btn-group btn-group-xs unitfilter">
+                    <button type="button" class="btn btn-default" id="allunits">all</button>
+                    <button type="button" class="btn btn-default" id="regions">Regions</button>
+                    <button type="button" class="btn btn-default" id="district">disticts</button>
+                </div>
+                <br>
+                <select name="adminUnit" multiple="multiple" class="adminUnit">
+
+                </select>
+            </div>
+            <div class="col-sm-3">
+                Periods <br>
+                <div class="btn-group btn-group-xs periodfilter" >
+                    <button type="button" class="btn btn-default" id="years">Yearly</button>
+                    <button type="button" class="btn btn-default" id="quarters">quarterly</button>
+                    <button type="button" class="btn btn-default" id="mounths">monthly</button>
+                </div>
+                <br>
+                <select name="periods" multiple="multiple" class="periods">
+
+                </select>
+            </div>
+            <div class="col-sm-3">
+                Data<br><br>
+                <select name="data" multiple="multiple" class="data-element">
+
+                </select>
+            </div>
+            <div class="col-sm-3">
+                Category<br><br>
+                <select name="category" class="category">
+                    <option value="pe">period</option>
+                    <option value="ou">administrative units</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 15px">
+            <div class="btn-group btn-group-xs reports">
+                <button class="btn btn-default" id="draw_table"><img src='scripts/analysis/table.png' style='height:20px;width:20px'> Table</button>
+                <button class="btn btn-default" id="draw_bar"><img src='scripts/analysis/bar.png' style='height:20px;width:20px'> Bar Chart</button>
+                <button class="btn btn-default" id="draw_column"><img src='scripts/analysis/column.png' style='height:20px;width:20px'> Column Chart</button>
+                <button class="btn btn-default" id="draw_line"><img src='scripts/analysis/line.png' style='height:20px;width:20px'> Line Chart</button>
+                <button class="btn btn-default" id="draw_pie"><img src='scripts/analysis/pie.png' style='height:20px;width:20px'> Pie Chart</button>
+                <button class="btn btn-default" id="draw_staked"><img src='scripts/analysis/staked.jpg' style='height:20px;width:20px'> Stacked Chart</button>
+                <button class="btn btn-default" id="draw_spider"><img src='scripts/analysis/spider.jpg' style='height:20px;width:20px'> Spider Chart</button>
+                <button class="btn btn-default" id="export_cvs"><img src='scripts/analysis/cvs.jpg' style='height:20px;width:20px'> Export to Excel</button>
+            </div>
+
+        </div>
+        <div class="row" id="mainarea" style="margin-top: 15px">
+
+        </div>
+    </div>
+</div>
