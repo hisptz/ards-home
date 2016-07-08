@@ -1,0 +1,485 @@
+<style>
+    .menuLink,.dropdown-toggle,.navbar-brand{
+        color:white !important;
+    }
+    /*#header{*/
+        /*margin-top: -70px;*/
+    /*}*/
+</style>
+<div id="header" ng-controller="MainController" >
+    <div id="dhisDropDownMenu" style="display: none">
+        <ul id="menuLinkArea">
+            <li id="profileButton"><a id="profileLink" class="menu-link drop-down-menu-link"><i class="fa fa-user"></i>Profile</a>
+                <div class="app-menu-dropdown-wrap">
+                    <div class="app-menu-dropdown">
+                        <div class="caret-up-border"></div>
+                        <div class="caret-up-background"></div>
+                        <ul class="menuDropDownBox">
+                            <li data-id="settings" data-app-name="Settings"
+                                data-app-action="../dhis-web-commons-about/userSettings.action"><a
+                                    href="../dhis-web-commons-about/userSettings.action" class="app-menu-item"><img
+                                    src="../icons/usersettings.png"
+                                    onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Settings</span>
+                                <div class="app-menu-item-description"><span class="bold">Settings</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                            <li data-id="profile" data-app-name="Profile"
+                                data-app-action="../dhis-web-commons-about/showUpdateUserProfileForm.action"><a
+                                    href="../dhis-web-commons-about/showUpdateUserProfileForm.action"
+                                    class="app-menu-item"><img src="../icons/function-profile.png"
+                                                               onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Profile</span>
+                                <div class="app-menu-item-description"><span class="bold">Profile</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                            <li data-id="account" data-app-name="Account"
+                                data-app-action="../dhis-web-commons-about/showUpdateUserAccountForm.action"><a
+                                    href="../dhis-web-commons-about/showUpdateUserAccountForm.action"
+                                    class="app-menu-item"><img src="../icons/function-account.png"
+                                                               onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Account</span>
+                                <div class="app-menu-item-description"><span class="bold">Account</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                            <li data-id="help" data-app-name="Help"
+                                data-app-action="../dhis-web-commons-about/help.action"><a
+                                    href="../dhis-web-commons-about/help.action" class="app-menu-item"><img
+                                    src="../icons/function-account.png"
+                                    onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Help</span>
+                                <div class="app-menu-item-description"><span class="bold">Help</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                            <li data-id="log_out" data-app-name="Log out"
+                                data-app-action="../dhis-web-commons-security/logout.action"><a
+                                    href="../dhis-web-commons-security/logout.action" class="app-menu-item"><img
+                                    src="../icons/function-log-out.png"
+                                    onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Log out</span>
+                                <div class="app-menu-item-description"><span class="bold">Log out</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                            <li data-id="about_dhis2" data-app-name="About DHIS 2"
+                                data-app-action="../dhis-web-commons-about/about.action"><a
+                                    href="../dhis-web-commons-about/about.action" class="app-menu-item"><img
+                                    src="../icons/function-about-dhis2.png"
+                                    onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>About DHIS 2</span>
+                                <div class="app-menu-item-description"><span class="bold">About DHIS 2</span><i
+                                        class="fa fa-arrows"></i>
+                                    <p></p></div>
+                            </a></li>
+                        </ul>
+                        <div class="menu-drop-down-buttons"></div>
+                    </div>
+                </div>
+            </li>
+            <li id="applicationsButton"><a id="applicationsLink" class="menu-link drop-down-menu-link"><i
+                    class="fa fa-th"></i>Apps</a>
+                <div class="app-menu-dropdown-wrap">
+                    <div class="app-menu-dropdown">
+                        <div class="caret-up-border"></div>
+                        <div class="caret-up-background"></div>
+                        <div class="menu-drop-down-wrap">
+                            <div class="menu-drop-down-scroll">
+                                <div class="apps-search-wrap"><input class="apps-search" type="text"
+                                                                     placeholder="Search apps"><i
+                                        class="apps-search-clear fa fa-times-circle"></i></div>
+                                <ul class="menuDropDownBox">
+                                    <li data-id="dhis-web-dashboard-integration" data-app-name="Dashboard"
+                                        data-app-action="../dhis-web-dashboard-integration/index.action"><a
+                                            href="../dhis-web-dashboard-integration/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-dashboard-integration.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Dashboard</span>
+                                        <div class="app-menu-item-description"><span class="bold">Dashboard</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-pivot" data-app-name="Pivot Table"
+                                        data-app-action="../dhis-web-pivot/index.action"><a
+                                            href="../dhis-web-pivot/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-pivot.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Pivot Table</span>
+                                        <div class="app-menu-item-description"><span class="bold">Pivot Table</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-visualizer" data-app-name="Data Visualizer"
+                                        data-app-action="../dhis-web-visualizer/index.action"><a
+                                            href="../dhis-web-visualizer/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-visualizer.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Visualizer</span>
+                                        <div class="app-menu-item-description"><span class="bold">Data Visualizer</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-mapping" data-app-name="GIS"
+                                        data-app-action="../dhis-web-mapping/index.action"><a
+                                            href="../dhis-web-mapping/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-mapping.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>GIS</span>
+                                        <div class="app-menu-item-description"><span class="bold">GIS</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-event-reports" data-app-name="Event Reports"
+                                        data-app-action="../dhis-web-event-reports/index.action"><a
+                                            href="../dhis-web-event-reports/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-event-reports.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Event Reports</span>
+                                        <div class="app-menu-item-description"><span class="bold">Event Reports</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-event-visualizer" data-app-name="Event Visualizer"
+                                        data-app-action="../dhis-web-event-visualizer/index.action"><a
+                                            href="../dhis-web-event-visualizer/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-event-visualizer.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Event Visualizer</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Event Visualizer</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-dataentry" data-app-name="Data Entry"
+                                        data-app-action="../dhis-web-dataentry/index.action"><a
+                                            href="../dhis-web-dataentry/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-dataentry.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Entry</span>
+                                        <div class="app-menu-item-description"><span class="bold">Data Entry</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-event-capture" data-app-name="Event Capture"
+                                        data-app-action="../dhis-web-event-capture/index.action"><a
+                                            href="../dhis-web-event-capture/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-event-capture.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Event Capture</span>
+                                        <div class="app-menu-item-description"><span class="bold">Event Capture</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-tracker-capture" data-app-name="Tracker Capture"
+                                        data-app-action="../dhis-web-tracker-capture/index.action"><a
+                                            href="../dhis-web-tracker-capture/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-tracker-capture.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Tracker Capture</span>
+                                        <div class="app-menu-item-description"><span class="bold">Tracker Capture</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-dataadmin" data-app-name="Data Administration"
+                                        data-app-action="../dhis-web-maintenance-dataadmin/index.action"><a
+                                            href="../dhis-web-maintenance-dataadmin/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-maintenance-dataadmin.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Administration</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Data Administration</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-dataset" data-app-name="Data Sets"
+                                        data-app-action="../dhis-web-maintenance-dataset/index.action"><a
+                                            href="../dhis-web-maintenance-dataset/index.action"
+                                            class="app-menu-item"><img src="../icons/dhis-web-maintenance-dataset.png"
+                                                                       onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Sets</span>
+                                        <div class="app-menu-item-description"><span class="bold">Data Sets</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-importexport" data-app-name="Import-Export"
+                                        data-app-action="../dhis-web-importexport/index.action"><a
+                                            href="../dhis-web-importexport/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-importexport.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Import-Export</span>
+                                        <div class="app-menu-item-description"><span class="bold">Import-Export</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-mobile" data-app-name="Mobile Configuration"
+                                        data-app-action="../dhis-web-maintenance-mobile/index.action"><a
+                                            href="../dhis-web-maintenance-mobile/index.action"
+                                            class="app-menu-item"><img src="../icons/dhis-web-maintenance-mobile.png"
+                                                                       onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Mobile Configuration</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Mobile Configuration</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-organisationunit"
+                                        data-app-name="Organisation Units"
+                                        data-app-action="../dhis-web-maintenance-organisationunit/index.action"><a
+                                            href="../dhis-web-maintenance-organisationunit/index.action"
+                                            class="app-menu-item"><img
+                                            src="../icons/dhis-web-maintenance-organisationunit.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Organisation Units</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Organisation Units</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-program" data-app-name="Programs / Attributes"
+                                        data-app-action="../dhis-web-maintenance-program/index.action"><a
+                                            href="../dhis-web-maintenance-program/index.action"
+                                            class="app-menu-item"><img src="../icons/dhis-web-maintenance-program.png"
+                                                                       onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Programs / Attributes</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Programs / Attributes</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance-user" data-app-name="Users"
+                                        data-app-action="../dhis-web-maintenance-user/index.action"><a
+                                            href="../dhis-web-maintenance-user/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-maintenance-user.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Users</span>
+                                        <div class="app-menu-item-description"><span class="bold">Users</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-validationrule" data-app-name="Data Quality"
+                                        data-app-action="../dhis-web-validationrule/index.action"><a
+                                            href="../dhis-web-validationrule/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-validationrule.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Quality</span>
+                                        <div class="app-menu-item-description"><span class="bold">Data Quality</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-light" data-app-name="Mobile (Light)"
+                                        data-app-action="../light/index.action"><a href="../light/index.action"
+                                                                                   class="app-menu-item"><img
+                                            src="../icons/dhis-web-light.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Mobile (Light)</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Mobile (Light)</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-mobile" data-app-name="Mobile (Smartphone)"
+                                        data-app-action="../mobile/index.action"><a href="../mobile/index.action"
+                                                                                    class="app-menu-item"><img
+                                            src="../icons/dhis-web-mobile.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Mobile (Smartphone)</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Mobile (Smartphone)</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-reporting" data-app-name="Reports"
+                                        data-app-action="../dhis-web-reporting/index.action"><a
+                                            href="../dhis-web-reporting/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-reporting.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Reports</span>
+                                        <div class="app-menu-item-description"><span class="bold">Reports</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-sms" data-app-name="SMS"
+                                        data-app-action="../sms/index.action"><a href="../sms/index.action"
+                                                                                 class="app-menu-item"><img
+                                            src="../icons/dhis-web-sms.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>SMS</span>
+                                        <div class="app-menu-item-description"><span class="bold">SMS</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-app-management" data-app-name="App Management"
+                                        data-app-action="../dhis-web-app-management/index.action"><a
+                                            href="../dhis-web-app-management/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-app-management.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>App Management</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">App Management</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-cache-cleaner" data-app-name="Browser Cache Cleaner"
+                                        data-app-action="../dhis-web-cache-cleaner/index.action"><a
+                                            href="../dhis-web-cache-cleaner/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-cache-cleaner.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Browser Cache Cleaner</span>
+                                        <div class="app-menu-item-description"><span
+                                                class="bold">Browser Cache Cleaner</span><i class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-maintenance" data-app-name="Data Elements / Indicators"
+                                        data-app-action="../dhis-web-maintenance/index.action"><a
+                                            href="../dhis-web-maintenance/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-maintenance.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Data Elements / Indicators</span>
+                                        <div class="app-menu-item-description"><span class="bold">Data Elements / Indicators</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="dhis-web-settings" data-app-name="Settings"
+                                        data-app-action="../dhis-web-settings/index.action"><a
+                                            href="../dhis-web-settings/index.action" class="app-menu-item"><img
+                                            src="../icons/dhis-web-settings.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Settings</span>
+                                        <div class="app-menu-item-description"><span class="bold">Settings</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="CMS" data-app-name="CMS"
+                                        data-app-action="http://ards.go.tz/demo/api/apps/cms/index.html"><a
+                                            href="http://ards.go.tz/demo/api/apps/cms/index.html" class="app-menu-item"><img
+                                            src="../icons/program.png"
+                                            onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>CMS</span>
+                                        <div class="app-menu-item-description"><span class="bold">CMS</span><i
+                                                class="fa fa-arrows"></i>
+                                            <p></p></div>
+                                    </a></li>
+                                    <li data-id="Reports App" data-app-name="Reports App"
+                                        data-app-action="http://ards.go.tz/demo/api/apps/standardreportapp/index.html">
+                                        <a href="http://ards.go.tz/demo/api/apps/standardreportapp/index.html"
+                                           class="app-menu-item"><img src="../icons/program.png"
+                                                                      onerror="javascript: this.onerror=null; this.src = '../icons/program.png';"><span>Reports App</span>
+                                            <div class="app-menu-item-description"><span class="bold">Reports App</span><i
+                                                    class="fa fa-arrows"></i>
+                                                <p></p></div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu-drop-down-buttons">
+                            <div class="apps-menu-bottom-button apps-menu-more"><a
+                                    href="../dhis-web-commons-about/modules.action">More apps</a></div>
+                            <div class="apps-menu-bottom-button apps-scroll apps-scroll-up"><a class="fa fa-caret-up"
+                                                                                               href="#"></a></div>
+                            <div class="apps-menu-bottom-button apps-scroll apps-scroll-down"><a
+                                    class="fa fa-caret-down" href="#"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row normal" style="background-color:#457B49;">
+        <div class="col-md-2" style="font-weight: bolder;">
+            <div style="font-weight: bolder; color:#fff;" class="hidden-sm hidden-xs">
+                <img src="images/nembo.png" class="img-rounded pull-left"
+                     style="height: 65px;width:70px">
+            </div>
+        </div>
+        <div class="col-md-8 text-center">
+            <span style="font-size:30px;text-align: center;color:#fff;font-weight:bolder;letter-spacing:1px">UNITED REPUBLIC OF TANZANIA</span>
+            <br><span style="font-size:14px;text-align: center;color:#fff;font-weight:bolder;letter-spacing: 3px;">ARDS WEB PORTAL</span>
+        </div>
+        <div class="col-md-2 hidden-sm hidden-xs">
+            <img src="images/tz_flag.gif" class="img-rounded pull-right"
+                 style="height: 65px; width: 70px">
+        </div>
+    </div>
+    <!-- navigation bar here-->
+    <div class="row normal">
+        <nav class="topnav navbar navbar-static-top navbar-inverse responsive" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="background-color:#457B49;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/demo/api/apps/home/index.html#/home/all" style="padding-left: 15px"><i
+                        class="fa fa-home"></i> ARDS</a>
+
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#457B49;">
+                <ul class="nav navbar-nav" style="background-color:#457B49">
+                    <!--../dhis-web-dashboard-integration/home.action-->
+                    <li style="border-right: solid 1px #888"><a id="menuLink5"
+                                                                href="../dhis-web-dashboard-integration/index.action"
+                                                                class="menuLink">Dashboard</a></li>
+                    <li style="border-right: solid 1px #888"><a
+                            href="http://ards.go.tz/demo/api/apps/standardreportapp/index.html#/standardReport"
+                            class="menuLink">Report</a></li>
+                    <li style="border-right: solid 1px #888"><a href="/demo/api/apps/analysis/index.html#/analysis"
+                                                                class="menuLink">Analysis</a></li>
+                    <li class="dropdown" style="border-right: solid 1px #888;">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Data<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-pivot/index.action"
+                                                                    class="menuLink">Pivot table</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-visualizer/index.action"
+                                                                    class="menuLink">Data visualizer</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-mapping/index.action"
+                                                                    class="menuLink">Map</a></li>
+
+                        </ul>
+                    </li>
+                    <li style="border-right: solid 1px #888"><a href="/demo/api/apps/news/index.html#/news"
+                                                                class="menuLink">News</a></li>
+                    <li style="border-right: solid 1px #888"><a href="/demo/api/apps/articles/index.html#/articles"
+                                                                class="menuLink">Articles</a></li>
+                    <li class="dropdown" style="border-right: solid 1px #888;">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">ARDS LGMD2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-dataentry/index.action" id="">Data
+                                Entry&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-importexport/index.action" id="">Import
+                                Export&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-dataentry/estimation.action"
+                                                                    id="">Data Estimation&nbsp;</a></li>
+                            <li style=" color:#ffffff!important;"><a
+                                    href="../dhis-web-maintenance-dataadmin/optionSet.action"> Look up Table&nbsp;</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" style="border-right: solid 1px #888;">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Maintainance<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li style="color:#ffffff!important;"><a
+                                    href="../dhis-web-maintenance-dataadmin/index.action" id="">Data Administration&nbsp;</a>
+                            </li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-maintenance/#" id="">Data Elements
+                                and Computed values&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-maintenance-dataset/index.action"
+                                                                    id="">Entry Form&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a
+                                    href="../dhis-web-maintenance-organisationunit/index.action" id="">Administrative
+                                Units&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-settings/"
+                                                                    id="">Settings&nbsp;</a></li>
+                            <li style="color:#ffffff!important;"><a href="../dhis-web-maintenance-user/index.action"
+                                                                    id="">Users&nbsp;</a></li>
+                            <li style="color:#ffffff!important;" class="cms"><a
+                                    href="/demo/api/apps/cms/index.html#/cms/articles/sub/all" id="cms_settings_button">CMS&nbsp;</a>
+                            </li>
+                            <li style="color:#ffffff!important;"><a
+                                    href="../dhis-web-reporting/generateHtmlReport.action?uid=vDl5hipAW8w&amp;">System
+                                usage statistics&nbsp;</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+                    <li style="width:172px!important;" class="hidden-sm hidden-xs">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;{{user.displayName
+                            | limitTo:17}}<b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="padding-left: 3px;">
+                            <li><a href="../dhis-web-commons-about/showUpdateUserProfileForm.action"><i
+                                    class="fa fa-pencil"></i>&nbsp;Update Info</a></li>
+                            <li><a href="../dhis-web-commons-about/userSettings.action"><i class="fa fa-pencil"></i>&nbsp;User
+                                Settings</a></li>
+                            <li><a href="../dhis-web-commons-about/help.action"><i class="fa fa-question-circle "
+                                                                                   style="color:black;"></i>&nbsp;Help
+                                Center</a></li>
+                            <li><a href="../dhis-web-commons-about/about.action" class="menuLink"><i
+                                    class="fa fa-info-circle" style="color:black;"></i>&nbsp;About ARDS</a></li>
+                            <li><a href="../dhis-web-commons-about/showUpdateUserAccountForm.action"><i
+                                    class="fa fa-lock"></i>&nbsp;Change Password</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../dhis-web-commons-security/logout.action"><i class="fa fa-power-off"></i>&nbsp;Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+    <!-- navigation ends here-->
+
+      <span id="showLeftBar" style="margin-top: 225px;">
+        <a href="javascript:dhis2.leftBar.showAnimated()" title="Show menu" ng-click="changeBootstrapClass('hide')">
+            <i class="fa fa-arrow-right leftBarIcon"></i></a>
+      </span>
+</div>

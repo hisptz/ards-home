@@ -1,0 +1,10 @@
+<div class="row">
+    <!--Nav tabs -->
+    <ul id="tabs">
+         <li id="{{homeTabActiveClass[tab.name].active}}" ng-repeat="tab in tabs track by $index" >
+             <a  href="#/home/{{tab.value|lowercase}}" style="cursor: pointer;" id="id_{{tab.value}}" >
+                 <em>{{tab.value}}</em>
+             </a>
+         </li>
+    </ul>
+</div>
