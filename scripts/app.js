@@ -29,9 +29,14 @@ var home = angular.module('home',
         .when('/:tabs', {
             templateUrl: "views/home.html",
             controller: 'homeController'
-        }).when('/analysis', {
+        })
+        .when('/:tab/menu/:menuId/favourite/:favourite', {
             templateUrl: "views/analysis.html",
             controller: 'analysisController'
+        })
+        .when('/:tab/menu/:menuId/favourite/:favourite/period/:period/orgunit/:orgunit/dx/:dx/type/:type/category/:category', {
+            templateUrl: "views/analysis.html",
+            controller: 'analysisDataController'
         })
         .otherwise('/');
     $translateProvider.preferredLanguage('en');

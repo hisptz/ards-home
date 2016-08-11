@@ -375,6 +375,28 @@ homeServices.service('utilityService',function(){
         return eventObject;
     }
 
+    utilityService.formatAnalysis = function(reportTable){
+        var favourites = [{name:'Agriculture',indicators:[]},{name:'Livestock',indicators:[]},{name:'Fishery',indicators:[]},{name:'Trade',indicators:[]},{name:'General Information',indicators:[]}];
+        angular.forEach(reportTable.reportTables,function(value){
+
+            if(value.displayName.indexOf("Agriculture:")>=0){
+                favourites[0].indicators.push(value);
+            }
+            if(value.displayName.indexOf("Fishery:")>=0){
+                favourites[2].indicators.push(value);
+            }
+            if(value.displayName.indexOf("General Information:")>=0){
+                favourites[4].indicators.push(value);
+            }
+            if(value.displayName.indexOf("Livestock:")>=0){
+                favourites[1].indicators.push(value);
+            }
+            if(value.displayName.indexOf("Trade:")>=0){
+                favourites[3].indicators.push(value);
+            }
+        });
+        return favourites;
+    }
 
     utilityService.refineTabs = function(events){
         var tabs = [];

@@ -2,503 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae5f9317-0767-40f9-a944-374751687bc7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/home.appcache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/home.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i18n/i18n_app.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i18n/i18n_app_ar.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i18n/i18n_app_es.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/i18n/i18n_app_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/chartloader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nembo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tz_flag.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.webapp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/directives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/filters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/angular-ckeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/angular-ckeditor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/angular-ckeditor.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/angular-ckeditor.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-ckeditor/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/angular-datatables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/angular-datatables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/css/angular-datatables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/css/angular-datatables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/adapters/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/build-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/ckeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/contents.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/fo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/gu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/mn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sr-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/tt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/lang/zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/about/dialogs/about.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/icons_hidpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/image/dialogs/image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/image/images/noimage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/link/dialogs/anchor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/link/dialogs/link.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/link/images/anchor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/magicline/images/hidpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/magicline/images/icon-rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/magicline/images/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/pastefromword/filter/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/scayt/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/scayt/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/scayt/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/scayt/dialogs/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/table/dialogs/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/css/samples.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/img/github-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/img/header-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/img/header-separator.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/img/navigation-tip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/js/sample.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/js/sf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/api.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/appendto.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/assets/inlineall/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/assets/posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/assets/sample.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/assets/uilanguages/languages.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/datafiltering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/dialog/dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/divreplace.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/enterkey/enterkey.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/htmlwriter/outputforflash.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/htmlwriter/outputhtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/inlineall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/inlinebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/inlinetextarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/jquery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/magicline/magicline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/readonly.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/replacebyclass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/replacebycode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/sample.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/sample.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/sample_posteddata.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/tabindex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/toolbar/toolbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/uicolor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/uilanguages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/old/xhtmlstyle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/dialog_ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/dialog_ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/dialog_ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/dialog_iequirks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor_gecko.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor_ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor_ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor_ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/editor_iequirks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/icons_hidpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/hidpi/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/hidpi/lock-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/hidpi/lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/hidpi/refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/lock-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/images/spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/skins/moono/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/ckeditor/styles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.uikit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/dataTables.uikit.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/jquery.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/jquery.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/css/jquery.dataTables_themeroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/Sorting icons.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/images/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.uikit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/dataTables.uikit.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/datatables/media/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts-ng/highcharts-ng.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/highslide/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/highslide/closeX.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/highslide/outlines/rounded-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/highslide/resize.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/highslide/zoomout.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/meteogram-symbols-30px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/skies.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/snow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/graphics/sun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/adapters/standalone-framework.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/adapters/standalone-framework.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts-3d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts-3d.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts-more.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/highcharts.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/boost.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/boost.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/broken-axis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/broken-axis.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/canvas-tools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/canvas-tools.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/data.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/drilldown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/drilldown.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/exporting.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/exporting.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/funnel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/funnel.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/heatmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/heatmap.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/no-data-to-display.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/no-data-to-display.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/offline-exporting.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/offline-exporting.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/solid-gauge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/solid-gauge.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/treemap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/modules/treemap.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/dark-blue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/dark-green.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/dark-unica.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/gray.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/grid-light.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/grid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/sand-signika.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/bower_components/highcharts/js/themes/skies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/dhis2/dhis2.angular.directives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/multiselect/isteven-multi-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/multiselect/isteven-multi-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/release/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/stateDirectives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/stateFilters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/templateFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/urlRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/viewDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/src/viewScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/ui-router2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/ui-router2.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular-ui-router/ui-router2.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/vendor/node_modules/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/tabstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/directives/home_left_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/directives/home_right_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/directives/home_tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/left-bar.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="$PROJECT_DIR$/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/controllers.js" afterPath="$PROJECT_DIR$/scripts/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/services.js" afterPath="$PROJECT_DIR$/scripts/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/directives/home_left_menu.html" afterPath="$PROJECT_DIR$/views/directives/home_left_menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/analysis.html" afterPath="$PROJECT_DIR$/views/partials/analysis.html" />
     </list>
     <ignored path="cmsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -518,7 +27,190 @@
     <favorites_list name="cmsp" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="247" column="88" selection-start-line="247" selection-start-column="16" selection-end-line="247" selection-end-column="88" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#262#2493#0" expanded="false" />
+                <element signature="e#2599#6647#0" expanded="false" />
+                <element signature="e#7041#7304#0" expanded="false" />
+                <element signature="e#7083#7165#0" expanded="false" />
+                <element signature="e#7206#7288#0" expanded="false" />
+                <element signature="e#7625#8534#0" expanded="false" />
+                <element signature="e#7795#8399#0" expanded="false" />
+                <element signature="e#7829#8294#0" expanded="false" />
+                <element signature="e#7893#8029#0" expanded="false" />
+                <element signature="e#8033#8271#0" expanded="false" />
+                <element signature="e#8146#8245#0" expanded="false" />
+                <element signature="e#8298#8379#0" expanded="false" />
+                <element signature="e#8506#8522#0" expanded="false" />
+                <element signature="e#8574#8635#0" expanded="false" />
+                <element signature="e#8891#10949#0" expanded="false" />
+                <element signature="e#8925#9083#0" expanded="false" />
+                <element signature="e#9126#9497#0" expanded="false" />
+                <element signature="e#9222#9485#0" expanded="false" />
+                <element signature="e#9264#9346#0" expanded="false" />
+                <element signature="e#9387#9469#0" expanded="false" />
+                <element signature="e#9806#10715#0" expanded="false" />
+                <element signature="e#9976#10580#0" expanded="false" />
+                <element signature="e#10010#10475#0" expanded="false" />
+                <element signature="e#10074#10210#0" expanded="false" />
+                <element signature="e#10214#10452#0" expanded="false" />
+                <element signature="e#10327#10426#0" expanded="false" />
+                <element signature="e#10479#10560#0" expanded="false" />
+                <element signature="e#10687#10703#0" expanded="false" />
+                <element signature="e#10755#10816#0" expanded="false" />
+                <element signature="e#11085#25706#0" expanded="false" />
+                <element signature="e#11607#11765#0" expanded="false" />
+                <element signature="e#11803#16311#0" expanded="false" />
+                <element signature="e#17707#17886#0" expanded="false" />
+                <element signature="e#17963#18281#0" expanded="false" />
+                <element signature="e#18356#18534#0" expanded="false" />
+                <element signature="e#18613#18742#0" expanded="false" />
+                <element signature="e#18876#19212#0" expanded="false" />
+                <element signature="e#19256#19627#0" expanded="false" />
+                <element signature="e#19352#19615#0" expanded="false" />
+                <element signature="e#19394#19476#0" expanded="false" />
+                <element signature="e#19517#19599#0" expanded="false" />
+                <element signature="e#19703#20359#0" expanded="false" />
+                <element signature="e#20408#23541#0" expanded="false" />
+                <element signature="e#20476#23528#0" expanded="false" />
+                <element signature="e#20825#22696#0" expanded="false" />
+                <element signature="e#20854#20978#0" expanded="false" />
+                <element signature="e#21010#21122#0" expanded="false" />
+                <element signature="e#21151#21323#0" expanded="false" />
+                <element signature="e#21189#21301#0" expanded="false" />
+                <element signature="e#21352#21674#0" expanded="false" />
+                <element signature="e#21385#21465#0" expanded="false" />
+                <element signature="e#21502#21652#0" expanded="false" />
+                <element signature="e#21503#21651#0" expanded="false" />
+                <element signature="e#21705#21770#0" expanded="false" />
+                <element signature="e#21800#21995#0" expanded="false" />
+                <element signature="e#22025#22678#0" expanded="false" />
+                <element signature="e#22026#22187#0" expanded="false" />
+                <element signature="e#22189#22353#0" expanded="false" />
+                <element signature="e#22355#22515#0" expanded="false" />
+                <element signature="e#22517#22677#0" expanded="false" />
+                <element signature="e#22748#23129#0" expanded="false" />
+                <element signature="e#23133#23513#0" expanded="false" />
+                <element signature="e#23597#24091#0" expanded="false" />
+                <element signature="e#23705#23989#0" expanded="false" />
+                <element signature="e#24008#24079#0" expanded="false" />
+                <element signature="e#24133#24520#0" expanded="false" />
+                <element signature="e#24563#25472#0" expanded="false" />
+                <element signature="e#24733#25337#0" expanded="false" />
+                <element signature="e#24767#25232#0" expanded="false" />
+                <element signature="e#24831#24967#0" expanded="false" />
+                <element signature="e#24971#25209#0" expanded="false" />
+                <element signature="e#25084#25183#0" expanded="false" />
+                <element signature="e#25236#25317#0" expanded="false" />
+                <element signature="e#25444#25460#0" expanded="false" />
+                <element signature="e#25512#25573#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analysis.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/analysis.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.5555553">
+              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#6;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#7;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#highchart#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_left_menu.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/directives/home_left_menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9028213">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="487" column="3" selection-start-line="487" selection-start-column="3" selection-end-line="487" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#207#12898#0" expanded="false" />
+                <element signature="e#12951#17758#0" expanded="false" />
+                <element signature="e#13049#13136#0" expanded="false" />
+                <element signature="e#13195#14153#0" expanded="false" />
+                <element signature="e#13460#14118#0" expanded="false" />
+                <element signature="e#13523#13592#0" expanded="false" />
+                <element signature="e#13649#13718#0" expanded="false" />
+                <element signature="e#13787#13856#0" expanded="false" />
+                <element signature="e#13915#13984#0" expanded="false" />
+                <element signature="e#14039#14108#0" expanded="false" />
+                <element signature="e#14203#14975#0" expanded="false" />
+                <element signature="e#15031#15587#0" expanded="false" />
+                <element signature="e#15184#15554#0" expanded="false" />
+                <element signature="e#15641#16617#0" expanded="false" />
+                <element signature="e#15821#16532#0" expanded="false" />
+                <element signature="e#15835#16167#0" expanded="false" />
+                <element signature="e#16681#16935#0" expanded="false" />
+                <element signature="e#16782#16904#0" expanded="false" />
+                <element signature="e#16834#16894#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -557,19 +249,19 @@
         <option value="$PROJECT_DIR$/scripts/analysis/orgUnits.js" />
         <option value="$PROJECT_DIR$/scripts/filters.js" />
         <option value="$PROJECT_DIR$/views/directives/home_right_menu.html" />
-        <option value="$PROJECT_DIR$/views/directives/home_left_menu.html" />
         <option value="$PROJECT_DIR$/scripts/analysis/data_analysis1.js" />
-        <option value="$PROJECT_DIR$/scripts/app.js" />
         <option value="$PROJECT_DIR$/views/partials/homeArticleContent.html" />
-        <option value="$PROJECT_DIR$/manifest.webapp" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/views/partials/analysis.html" />
         <option value="$PROJECT_DIR$/home.appcache" />
-        <option value="$PROJECT_DIR$/scripts/services.js" />
-        <option value="$PROJECT_DIR$/scripts/controllers.js" />
-        <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/scripts/directives.js" />
         <option value="$PROJECT_DIR$/views/directives/home_tabs.html" />
+        <option value="$PROJECT_DIR$/manifest.webapp" />
+        <option value="$PROJECT_DIR$/views/home.html" />
+        <option value="$PROJECT_DIR$/scripts/controllers.js" />
+        <option value="$PROJECT_DIR$/scripts/app.js" />
+        <option value="$PROJECT_DIR$/views/partials/analysis.html" />
+        <option value="$PROJECT_DIR$/views/directives/home_left_menu.html" />
+        <option value="$PROJECT_DIR$/scripts/services.js" />
       </list>
     </option>
   </component>
@@ -579,10 +271,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
-    <option name="y" value="-3" />
-    <option name="width" value="1553" />
-    <option name="height" value="904" />
+    <option name="x" value="50" />
+    <option name="y" value="39" />
+    <option name="width" value="773" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -609,6 +301,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -618,9 +311,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -630,14 +410,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/partials" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/scripts" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views/directives" />
+      <recent name="$PROJECT_DIR$/views/partials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views/partials" />
     </key>
   </component>
@@ -714,25 +494,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-3" width="1553" height="904" extended-state="6" />
-    <editor active="false" />
+    <frame x="50" y="39" width="773" height="860" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27450982" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55851066" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.49701047" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294271" sideWeight="0.50298953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.515625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.93434346" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -759,245 +539,278 @@
           <line>90</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/scripts/services.js</url>
+          <line>465</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/left-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_right_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/left-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_right_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="212" column="31" selection-start-line="212" selection-start-column="31" selection-end-line="212" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_right_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_left_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/tabstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="769" column="0" selection-start-line="769" selection-start-column="0" selection-end-line="769" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/left-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/chartloader.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.appcache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31652662">
-          <caret line="121" column="61" selection-start-line="121" selection-start-column="61" selection-end-line="121" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="19" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/directives/home_tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037815128">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45588234">
-          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.webapp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/i18n_app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.appcache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.webapp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.097297296">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/analysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5555553">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#6;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#7;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#highchart#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="201" column="25" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
+          <caret line="247" column="88" selection-start-line="247" selection-start-column="16" selection-end-line="247" selection-end-column="88" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#262#2493#0" expanded="false" />
+            <element signature="e#2599#6647#0" expanded="false" />
+            <element signature="e#7041#7304#0" expanded="false" />
+            <element signature="e#7083#7165#0" expanded="false" />
+            <element signature="e#7206#7288#0" expanded="false" />
+            <element signature="e#7625#8534#0" expanded="false" />
+            <element signature="e#7795#8399#0" expanded="false" />
+            <element signature="e#7829#8294#0" expanded="false" />
+            <element signature="e#7893#8029#0" expanded="false" />
+            <element signature="e#8033#8271#0" expanded="false" />
+            <element signature="e#8146#8245#0" expanded="false" />
+            <element signature="e#8298#8379#0" expanded="false" />
+            <element signature="e#8506#8522#0" expanded="false" />
+            <element signature="e#8574#8635#0" expanded="false" />
+            <element signature="e#8891#10949#0" expanded="false" />
+            <element signature="e#8925#9083#0" expanded="false" />
+            <element signature="e#9126#9497#0" expanded="false" />
+            <element signature="e#9222#9485#0" expanded="false" />
+            <element signature="e#9264#9346#0" expanded="false" />
+            <element signature="e#9387#9469#0" expanded="false" />
+            <element signature="e#9806#10715#0" expanded="false" />
+            <element signature="e#9976#10580#0" expanded="false" />
+            <element signature="e#10010#10475#0" expanded="false" />
+            <element signature="e#10074#10210#0" expanded="false" />
+            <element signature="e#10214#10452#0" expanded="false" />
+            <element signature="e#10327#10426#0" expanded="false" />
+            <element signature="e#10479#10560#0" expanded="false" />
+            <element signature="e#10687#10703#0" expanded="false" />
+            <element signature="e#10755#10816#0" expanded="false" />
+            <element signature="e#11085#25706#0" expanded="false" />
+            <element signature="e#11607#11765#0" expanded="false" />
+            <element signature="e#11803#16311#0" expanded="false" />
+            <element signature="e#17707#17886#0" expanded="false" />
+            <element signature="e#17963#18281#0" expanded="false" />
+            <element signature="e#18356#18534#0" expanded="false" />
+            <element signature="e#18613#18742#0" expanded="false" />
+            <element signature="e#18876#19212#0" expanded="false" />
+            <element signature="e#19256#19627#0" expanded="false" />
+            <element signature="e#19352#19615#0" expanded="false" />
+            <element signature="e#19394#19476#0" expanded="false" />
+            <element signature="e#19517#19599#0" expanded="false" />
+            <element signature="e#19703#20359#0" expanded="false" />
+            <element signature="e#20408#23541#0" expanded="false" />
+            <element signature="e#20476#23528#0" expanded="false" />
+            <element signature="e#20825#22696#0" expanded="false" />
+            <element signature="e#20854#20978#0" expanded="false" />
+            <element signature="e#21010#21122#0" expanded="false" />
+            <element signature="e#21151#21323#0" expanded="false" />
+            <element signature="e#21189#21301#0" expanded="false" />
+            <element signature="e#21352#21674#0" expanded="false" />
+            <element signature="e#21385#21465#0" expanded="false" />
+            <element signature="e#21502#21652#0" expanded="false" />
+            <element signature="e#21503#21651#0" expanded="false" />
+            <element signature="e#21705#21770#0" expanded="false" />
+            <element signature="e#21800#21995#0" expanded="false" />
+            <element signature="e#22025#22678#0" expanded="false" />
+            <element signature="e#22026#22187#0" expanded="false" />
+            <element signature="e#22189#22353#0" expanded="false" />
+            <element signature="e#22355#22515#0" expanded="false" />
+            <element signature="e#22517#22677#0" expanded="false" />
+            <element signature="e#22748#23129#0" expanded="false" />
+            <element signature="e#23133#23513#0" expanded="false" />
+            <element signature="e#23597#24091#0" expanded="false" />
+            <element signature="e#23705#23989#0" expanded="false" />
+            <element signature="e#24008#24079#0" expanded="false" />
+            <element signature="e#24133#24520#0" expanded="false" />
+            <element signature="e#24563#25472#0" expanded="false" />
+            <element signature="e#24733#25337#0" expanded="false" />
+            <element signature="e#24767#25232#0" expanded="false" />
+            <element signature="e#24831#24967#0" expanded="false" />
+            <element signature="e#24971#25209#0" expanded="false" />
+            <element signature="e#25084#25183#0" expanded="false" />
+            <element signature="e#25236#25317#0" expanded="false" />
+            <element signature="e#25444#25460#0" expanded="false" />
+            <element signature="e#25512#25573#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="487" column="3" selection-start-line="487" selection-start-column="3" selection-end-line="487" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#207#12898#0" expanded="false" />
+            <element signature="e#12951#17758#0" expanded="false" />
+            <element signature="e#13049#13136#0" expanded="false" />
+            <element signature="e#13195#14153#0" expanded="false" />
+            <element signature="e#13460#14118#0" expanded="false" />
+            <element signature="e#13523#13592#0" expanded="false" />
+            <element signature="e#13649#13718#0" expanded="false" />
+            <element signature="e#13787#13856#0" expanded="false" />
+            <element signature="e#13915#13984#0" expanded="false" />
+            <element signature="e#14039#14108#0" expanded="false" />
+            <element signature="e#14203#14975#0" expanded="false" />
+            <element signature="e#15031#15587#0" expanded="false" />
+            <element signature="e#15184#15554#0" expanded="false" />
+            <element signature="e#15641#16617#0" expanded="false" />
+            <element signature="e#15821#16532#0" expanded="false" />
+            <element signature="e#15835#16167#0" expanded="false" />
+            <element signature="e#16681#16935#0" expanded="false" />
+            <element signature="e#16782#16904#0" expanded="false" />
+            <element signature="e#16834#16894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/directives/home_left_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9028213">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
