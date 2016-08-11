@@ -254,6 +254,126 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
     }
 
 
+
+    home.getDataDimension = function (analytics,dataArray) {
+        var dx = analytics.metaData.dx;
+        var names = analytics.metaData.names;
+        var datadimensions = [];
+
+        angular.forEach(dx, function(value){
+            if(names[value]){
+                datadimensions.push({name:names[value],id:value});
+            }
+        });
+
+        angular.forEach(datadimensions, function(dimensionValue,index){
+
+            angular.forEach(dataArray, function(dataValue){
+                if ( dataValue == dimensionValue.id ) {
+
+                    datadimensions[index].isExpanded = false;
+                    datadimensions[index].isActive = false;
+                    datadimensions[index].selected = true;
+                }
+            });
+        });
+
+        return datadimensions;
+    }
+
+    home.getSelectionCriterias = function(item, selectedItems,selectedType,newUrl){
+
+        var organisationUnit = "";
+        var period = "";
+        var data = "";
+        var category = "";
+        var type = "";
+
+        if ( selectedType == "orgUnit" && selectedItems.length > 0 ) {
+            angular.forEach(selectedItems , function(item){
+                organisationUnit+=item.id+";";
+            })
+
+        }
+
+        if ( selectedType == "period" && selectedItems.length > 0 ) {
+            angular.forEach(selectedItems , function(item){
+                period+=item.value+";";
+            })
+        }
+
+        if ( selectedType == "data" && selectedItems.length > 0 ) {
+            angular.forEach(selectedItems , function(item){
+                data+=item.id+";";
+            })
+        }
+
+
+        if ( selectedType == "category" && selectedItems.length > 0 ) {
+            console.log(selectedItems)
+            angular.forEach(selectedItems , function(item){
+                category = item.id;
+            })
+        }
+
+
+        var extractingCategory = newUrl.split('/category/');
+        var extractingType = extractingCategory[0].split('/type/');
+        var extractingDx = extractingType[0].split('/dx/');
+        var extractingOrgUnit = extractingDx[0].split('/orgunit/');
+        var extractingPeriod = extractingOrgUnit[0].split('/period/');
+
+        if (organisationUnit==""){
+            organisationUnit = extractingOrgUnit[1];
+        }
+        if (data==""){
+            data = extractingDx[1];
+        }
+        if (period==""){
+            period = extractingPeriod[1];
+        }
+
+        if (category==""){
+            category = extractingCategory[1];
+        }
+        if (type==""){
+            type = extractingType[1];
+        }
+
+        return {newUrl:extractingPeriod[0]+'/period/'+period+'/orgunit/'+organisationUnit+'/dx/'+data+'/type/'+type+'/category/'+category,category:category}
+
+    }
+
+    home.prepareUrlForChange = function (url,param,paramValue) {
+
+        var extractingType = url.split('/type/');
+        var extractingDx = extractingType[0].split('/dx/');
+        var extractingOrgUnit = extractingDx[0].split('/orgunit/');
+        var extractingPeriod = extractingOrgUnit[0].split('/period/');
+
+        var organisationUnit = extractingOrgUnit[1];
+
+        var data = extractingDx[1];
+
+        var period = extractingPeriod[1];
+
+
+        return {newUrl:extractingPeriod[0]+'/period/'+period+'/orgunit/'+organisationUnit+'/dx/'+data+'/type/'+paramValue};
+    }
+
+    home.setSelectedCategory = function(dataArray,category) {
+        angular.forEach(dataArray,function(value,index){
+            if ( value.id == category ) {
+                dataArray[index].isExpanded = false;
+                dataArray[index].isActive = false;
+                dataArray[index].selected = true;
+            }
+        });
+
+        return dataArray;
+    }
+
+
     home.loadChartStorage = function(){
 
         var url = "../../../api/dataStore/chartsStorage/availableCharts";
@@ -339,8 +459,132 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
     }
 
     home.getReportTables = function(){
-        var url = "../../../api/reportTables.json?paging=false";
+        var url = "../../../api/reportTables.json?fields=:all&paging=false";
         return $http.get(url).then(handleSuccess, handleError("Error Loading favourites"));
+    }
+    home.prepareLeftMenu = function(reportTables){
+
+        var mainmenu = new Array();
+        var menuarr = [{'name':"Agriculture",values:[]},{'name':"Livestock",values:[]},{'name':"Fishery",values:[]},{'name':"Trade",values:[]},{'name':"General Information",values:[]}];
+        var arrayCounter = 0;
+
+
+        angular.forEach( reportTables , function( value ){
+            var arr = value.displayName.split(':');
+            if(arr.length != 1){
+                angular.forEach(menuarr,function(menuValue){
+                    if(arr[0] == menuValue.name){
+                        menuValue.values.push({id:value.id,displayName:arr[1],shortName:arr[1].substring(0,20)+"...",period:home.preparePeriodFromReportTables(value),orgUnit:home.prepareOrgUnitFromReportTables(value),dx:home.prepareDxFromReportTables(value),filter:value.filterDimensions[0]});
+                    }
+                })
+
+            }
+        });
+
+        return menuarr;
+
+    }
+
+    home.preparePeriodFromReportTables = function(reportTable){
+        var periodLength = reportTable.periods.length;
+        var period = "";
+
+        angular.forEach(reportTable.periods, function(value){
+
+            if ( periodLength >1 ) {
+                period+=";"
+            }
+
+            period+=value.id;
+        });
+
+        return period;
+
+    }
+
+    home.prepareOrgUnitFromReportTables = function(reportTable){
+
+        var organisationUnitsLength = reportTable.organisationUnits.length;
+        var organisationUnits = "";
+
+        angular.forEach(reportTable.organisationUnits, function(value){
+
+            if ( organisationUnitsLength >1 ) {
+                organisationUnits+=";"
+            }
+
+            organisationUnits+=value.id;
+        });
+
+        return organisationUnits;
+    }
+
+
+    home.prepareDxFromReportTables = function(reportTable){
+
+        var dataDimensionItemsLength = reportTable.dataDimensionItems.length;
+        var dataDimensionItems = "";
+
+        angular.forEach(reportTable.dataDimensionItems, function(value){
+
+            if ( value.dataDimensionItemType == "AGGREGATE_DATA_ELEMENT" ) {
+
+                dataDimensionItems+=value.dataElement.id+";"
+            }
+
+
+            if ( value.dataDimensionItemType == "INDICATOR" ) {
+
+                dataDimensionItems+=value.indicator.id+";"
+            }
+        });
+        dataDimensionItems = dataDimensionItems.substring(0, dataDimensionItems.length-1);
+
+        return dataDimensionItems;
+    }
+
+    home.getAnalytics = function(url){
+
+        return $http.get(url).then(handleSuccess, handleError('Error getting analytics'));
+
+    }
+
+    home.sortOrganisationUnits = function (orgUnit,orgUnitArray) {
+
+        angular.forEach(orgUnitArray,function (unitData) {
+
+            if ( unitData == orgUnit.id ) {
+                orgUnit.isExpanded = false;
+                orgUnit.isActive = false
+                orgUnit.selected = true;
+
+            }
+
+        })
+
+        var that = this;
+        if (orgUnit.children) {
+            orgUnit.children.sort(function (child1, child2) {
+                return orgUnitFunction(child1).localeCompare(orgUnitFunction(child2));
+            });
+            orgUnit.children.forEach(function (child) {
+                that.sortOrganisationUnits(child,orgUnitArray);
+            })
+        }
+    }
+
+
+    home.loggedUser = function(){
+        var url = "../../../api/me.json";
+        return $http.get(url).then(handleSuccess, handleError('Error loading logeged in user'));
+    }
+    home.getOrgUnitTree = function(userOrgUnit){
+        var orgUnitIds = [];
+        userOrgUnit.forEach(function (orgUnit) {
+            orgUnitIds.push(orgUnit.id);
+        });
+        return $http.get("../../../api/organisationUnits.json?filter=id:in:[" + orgUnitIds + "]&fields=id,name,level,children[id,name,level,children[id,name,level,children[id,name,level,children[id,name,level,children]]]]");
+
     }
 
     home.getUsers = function(){
@@ -362,7 +606,9 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
 
         return finalUsers;
     }
-
+    function orgUnitFunction(child) {
+        return child.name;
+    }
 
     return home;
 }]);

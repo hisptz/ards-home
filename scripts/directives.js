@@ -71,18 +71,59 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
     };
 }]);
 
-homeDirectives.directive("homeLeftMenu", ['homeService','utilityService',function(homeService,utilityService){
+homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$location',function(homeService,utilityService,$location){
     return {
         restrict: "E",
         replace: true,
         scope: {
             reportTables: "=reportTables",
             documentObject: "=documentObject",
+            tab: "=tabs",
+            menu: "=menu",
+            favourite: "=favourite"
         },
         templateUrl: "views/directives/home_left_menu.html",
         link: function($scope, element, attrs) {
             $scope.error  = false;
             $scope.errorMessage  = "no document found";
+
+
+
+            $scope.openTab = {};
+            $scope.openChildTab = {};
+            $scope.statusClass = {};
+            $scope.openTab['analysis'] = true;
+            $scope.openAccordion = function(parentElement,childElement){
+            //console.log("there you go");
+            //console.log(parentElement);
+
+                //angular.forEach({{openChildTab[tables.name]}})
+
+                if ( !$scope.openTab[parentElement] ) {
+                    $scope.openTab = {};
+                    $scope.statusClass = {};
+                    $scope.openTab[parentElement] = true;
+                    $scope.statusClass[$scope.favourite] = "alert-success";
+                }
+
+                if ( !$scope.openChildTab[childElement] && childElement != "" ) {
+                    $scope.openChildTab = {};
+                    $scope.statusClass = {};
+                    $scope.openChildTab[childElement] = true;
+                    $scope.statusClass[$scope.favourite] = "alert-success";
+                    console.log(childElement);
+                }
+
+                $location.path('/'+parentElement+'/menu/'+childElement);
+            }
+
+            $scope.$watch($scope.tab,function(newTab,oldTab){
+                $scope.openTab[$scope.tab] = true;
+                $scope.openChildTab[$scope.menu] = true;
+                $scope.statusClass[$scope.favourite] = "alert-success";
+                //$location.path('/'+scope.tab+'/menu/'+scope.menu);
+            });
+
 
             $scope.loadExternalLinks = function(){
 
@@ -92,25 +133,25 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService',functio
             }
 
 
-            // get report tables
-            $scope.getReportTable = function () {
-
-                if(localStorage.getItem('reportTables')){
-                    $scope.reportTables = utilityService.prepareReportTables(JSON.parse(localStorage.getItem('reportTables')));
-                }else{
-
-                    homeService.getReportTables().then(function(data){
-                        $scope.reportTables = utilityService.prepareReportTables(data.reportTables);
-                        localStorage.setItem('reportTables',JSON.stringify(data.reportTables));
-                    },function(error){
-
-                    });
-                }
-
-
-            }
-
-            $scope.getReportTable();
+            //// get report tables
+            //$scope.getReportTable = function () {
+            //
+            //    if(localStorage.getItem('reportTables')){
+            //        $scope.reportTables = utilityService.prepareReportTables(JSON.parse(localStorage.getItem('reportTables')));
+            //    }else{
+            //
+            //        homeService.getReportTables().then(function(data){
+            //            $scope.reportTables = utilityService.prepareReportTables(data.reportTables);
+            //            localStorage.setItem('reportTables',JSON.stringify(data.reportTables));
+            //        },function(error){
+            //
+            //        });
+            //    }
+            //
+            //
+            //}
+            //
+            //$scope.getReportTable();
 
 
 
@@ -123,7 +164,6 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService',functio
 
 
             $scope.loadExternalLinks();
-            $scope.getReportTable();
 
         }
     };

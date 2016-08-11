@@ -10,6 +10,7 @@ var home = angular.module('home',
                         'homeDirectives',
                         'homeControllers',
                         'homeServices',
+                        'chartServices',
                         'homeFilters',
                         'd2Directives',
                         'd2Services',
@@ -27,6 +28,10 @@ var home = angular.module('home',
             controller: 'homeController'
         })
         .when('/:tabs', {
+            templateUrl: "views/home.html",
+            controller: 'homeController'
+        })
+        .when('/:tab/menu/:menuId', {
             templateUrl: "views/home.html",
             controller: 'homeController'
         })
