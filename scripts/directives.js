@@ -94,10 +94,6 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
             $scope.statusClass = {};
             $scope.openTab['analysis'] = true;
             $scope.openAccordion = function(parentElement,childElement){
-            //console.log("there you go");
-            //console.log(parentElement);
-
-                //angular.forEach({{openChildTab[tables.name]}})
 
                 if ( !$scope.openTab[parentElement] ) {
                     $scope.openTab = {};
@@ -131,28 +127,6 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
                     $scope.externalLinks = response;
                 });
             }
-
-
-            //// get report tables
-            //$scope.getReportTable = function () {
-            //
-            //    if(localStorage.getItem('reportTables')){
-            //        $scope.reportTables = utilityService.prepareReportTables(JSON.parse(localStorage.getItem('reportTables')));
-            //    }else{
-            //
-            //        homeService.getReportTables().then(function(data){
-            //            $scope.reportTables = utilityService.prepareReportTables(data.reportTables);
-            //            localStorage.setItem('reportTables',JSON.stringify(data.reportTables));
-            //        },function(error){
-            //
-            //        });
-            //    }
-            //
-            //
-            //}
-            //
-            //$scope.getReportTable();
-
 
 
             $scope.loadExternalLinks = function(){

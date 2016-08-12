@@ -548,6 +548,7 @@ var homeControllers = angular.module('homeControllers', [])
 
             $scope.btnClass[chartType] = true;
             $scope.chartType = chartType;
+            //console.log(homeService.prepareUrlForChange($location.path(),'type',chartType).newUrl);
             $location.path(homeService.prepareUrlForChange($location.path(),'type',chartType).newUrl);
 
         }

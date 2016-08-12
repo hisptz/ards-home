@@ -345,20 +345,23 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
     }
 
     home.prepareUrlForChange = function (url,param,paramValue) {
-
+        var extractingCategory = url.split('/category/');
         var extractingType = url.split('/type/');
         var extractingDx = extractingType[0].split('/dx/');
         var extractingOrgUnit = extractingDx[0].split('/orgunit/');
         var extractingPeriod = extractingOrgUnit[0].split('/period/');
 
+        var category = extractingCategory[1];
+
         var organisationUnit = extractingOrgUnit[1];
+
 
         var data = extractingDx[1];
 
         var period = extractingPeriod[1];
 
 
-        return {newUrl:extractingPeriod[0]+'/period/'+period+'/orgunit/'+organisationUnit+'/dx/'+data+'/type/'+paramValue};
+        return {newUrl:extractingPeriod[0]+'/period/'+period+'/orgunit/'+organisationUnit+'/dx/'+data+'/type/'+paramValue+'/category/'+category};
     }
 
     home.setSelectedCategory = function(dataArray,category) {
@@ -462,6 +465,7 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
         var url = "../../../api/reportTables.json?fields=:all&paging=false";
         return $http.get(url).then(handleSuccess, handleError("Error Loading favourites"));
     }
+
     home.prepareLeftMenu = function(reportTables){
 
         var mainmenu = new Array();
@@ -519,7 +523,6 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
         return organisationUnits;
     }
 
-
     home.prepareDxFromReportTables = function(reportTable){
 
         var dataDimensionItemsLength = reportTable.dataDimensionItems.length;
@@ -573,11 +576,11 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
         }
     }
 
-
     home.loggedUser = function(){
         var url = "../../../api/me.json";
         return $http.get(url).then(handleSuccess, handleError('Error loading logeged in user'));
     }
+
     home.getOrgUnitTree = function(userOrgUnit){
         var orgUnitIds = [];
         userOrgUnit.forEach(function (orgUnit) {
