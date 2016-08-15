@@ -431,11 +431,9 @@ var homeControllers = angular.module('homeControllers', [])
         $scope.dataArray         = $routeParams.dx.split(';');
         $scope.categoryArray     = $routeParams.category.split(';');
         $scope.periodType        = getPeriodType($routeParams.period);
-        console.log("Period type:",$scope.periodType)
 
         $rootScope.openChildTab = [];
         $rootScope.openChildTab[$routeParams.menuId] = true;
-        console.log($rootScope.openChildTab);
         $scope.showDataCriteria = true;
 
         if($routeParams.menuId){
@@ -630,11 +628,7 @@ var homeControllers = angular.module('homeControllers', [])
                 var thisYear = date.getFullYear();
                 for( var i=0 ; i<limit ; i++ ) {
                     var date = new Date((thisYear-i)+"-01"+"-01");
-                    //console.log(thisYear-i);
-                    //console.log(date);
-                    //$scope.data.periodTypes[periodType].populateList(date);
                 }
-                console.log("periods:",$scope.data.periodTypes[periodType]);
                 angular.forEach($routeParams.period.split(';'),function(value,index){
                     if(valueList.value == value) {
                         $scope.data.periodTypes[periodType].list[indexList].selected = true;
@@ -654,7 +648,13 @@ var homeControllers = angular.module('homeControllers', [])
             angular.forEach($routeParams.period.split(";"),function(period){
                 periodsArray.push(period)
             });
-            var year = periodsArray[0].substring(0,4);
+            var year = null;
+            for(var i =0;i<periodsArray.length;i++){
+                if(periodsArray[i] !=""){
+                    year = periodsArray[i].substring(0,4);
+                    break;
+                }
+            }
             $scope.yearValue = year;
 
             $scope.data.dataperiods = $scope.periodArray(type,year);
@@ -663,14 +663,12 @@ var homeControllers = angular.module('homeControllers', [])
                     data.selected = true;
                 }
             });
-            console.log($scope.data.dataperiods)
         };
 
         //loading period settings
         $scope.getnextPrevPeriodArray = function(type){
             var year = $scope.yearValue;
             $scope.data.dataperiods = $scope.periodArray(type,year);
-            console.log($scope.data.dataperiods)
         };
 
         //add year by one
@@ -702,11 +700,6 @@ var homeControllers = angular.module('homeControllers', [])
 
         $scope.periodCallBack = function(item, selectedItems,selectedType) {
 
-            //var criteriaArray = homeService.getSelectionCriterias(selectedOrgUnit, selectedOrgUnits,selectedType,$location.path());
-            //console.log(criteriaArray);
-            //console.log(selectedOrgUnit);
-            //console.log(selectedOrgUnits);
-            //console.log(criteriaArray);
         }
 
         $scope.dataCallBack = function(item, selectedItems,selectedType) {
@@ -730,7 +723,6 @@ var homeControllers = angular.module('homeControllers', [])
             });
 
             var path = '/analysis/menu/'+$routeParams.menuId+'/favourite/'+$routeParams.favourite+'/period/'+$scope.periodsArray.join(";")+'/orgunit/'+$scope.orgunitsArray.join(";")+'/dx/'+$scope.dataArray.join(";")+'/type/'+$scope.chartType+'/category/'+$scope.data.outputCategory[0].id;
-            console.log(path)
             $location.path(path);
         };
 

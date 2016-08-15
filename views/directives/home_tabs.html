@@ -11,7 +11,7 @@
 
         </div>
     </div>
-    <ul id="tabs">
+    <ul id="tabs" style="margin-left: 1em;margin-right: 1em;">
          <li id="{{homeTabActiveClass[tab.value].active}}" ng-repeat="tab in tabs track by $index" >
              <a  href="#/{{tab.value|lowercase}}" style="cursor: pointer;" id="id_{{tab.value|lowercase}}" >
                  <em>{{tab.value}}</em>

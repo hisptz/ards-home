@@ -14,6 +14,7 @@ var home = angular.module('home',
                         'homeFilters',
                         'd2Directives',
                         'd2Services',
+                        'multi-select-tree',
                         'd2Controllers',
                         'pascalprecht.translate',
                     'd2HeaderBar'])
