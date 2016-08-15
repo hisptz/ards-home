@@ -1,43 +1,10 @@
-<span id="showLeftBar" class="hideInPrint" style="margin-top: 20px;z-index:20;">
-    <a href="javascript:dhis2.leftBar.showAnimated()" title="$i18n.getString('show_menu' )"><i class="fa fa-arrow-right leftBarIcon"></i></a>
-</span>
+<home-tabs
+        ng-if="!showAnalysis"
+        current-tab="currentTab"
+        tab-object="tabs"
+        show-cms="show_cms"
+>
+</home-tabs>
+<div ng-if="showAnalysis" ng-include="'views/partials/analysis.html'"></div>
+<div ng-if="!showAnalysis" ng-include="'views/partials/homeArticleContent.html'"></div>
 
-<div id="leftBar" >
-
-    <d2-left-bar></d2-left-bar>
-
-    <div id="leftContainer" style="height:100%;">
-        <home-left-menu report-tables="analysis" tabs="tab" menu="menuId" style="padding-bottom: 60px"></home-left-menu>
-
-    </div>
-
-</div>
-
-
-<!--<div class="page "  id="mainPage" style="margin-left: 270px;">-->
-<div class="page "  id="mainPage" >
-    <div class="row">
-        <div class="col-md-10">
-            <home-tabs ng-if="!showAnalysis"
-                    current-tab="currentTab"
-                    tab-object="tabs"
-                       show-cms="show_cms"
-            >
-            </home-tabs>
-            <div ng-if="showAnalysis" ng-include="'views/partials/analysis.html'"></div>
-            <div ng-if="!showAnalysis" ng-include="'views/partials/homeArticleContent.html'"></div>
-
-        </div>
-        <div class="col-md-2">
-            <div id="rightsBar" style="height:100%;display: block;" >
-                <!-- put right menu directive here -->
-                <home-right-menu
-                        message-object="messages"
-                        chart-object="charts"
-                >
-                </home-right-menu>
-            </div>
-        </div>
-    </div>
-
-</div>

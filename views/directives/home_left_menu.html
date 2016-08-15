@@ -1,23 +1,26 @@
-<div class="row" id="leftbarcontents" style="padding-right: 0px;padding-left: 0px">
+<div class="row" id="leftbarcontents" style="padding-right: 0px;padding-left: 0px;padding-bottom: 100px">
     <div id="left-Menu">
         <accordion close-others="oneAtATime">
-            <accordion-group heading="Data Analysis" is-open="openTab['analysis']" panel-class="panel-success" ng-click="openAccordion('analysis','')">
+            <accordion-group heading="Data Analysis" is-open="openTab['analysis']" is-disabled="status.isFirstDisabled">
                 <span ng-if="!reportTables" style="padding-left:10px; ">
                     <i class="fa fa-spin fa-spinner" ></i>
                 </span>
-                <accordion-group heading="{{tables.name}}" is-open="openChildTab[tables.name]" ng-repeat="tables in reportTables" ng-click="openAccordion('analysis',tables.name)">
+                <accordion close-others="oneAtATime">
+                    <accordion-group heading="{{tables.name}}" is-open="$root.openChildTab[tables.name]" ng-repeat="tables in reportTables">
+                        <ul class="nav nav-pills nav-stacked">
 
-                    <ul class="nav nav-pills nav-stacked">
+                            <li ng-repeat="tableItem in tables.values" style="padding: 0px;font-size:13px;" class="menuitem {{statusClass[tableItem.id]}} listmenu" allstring="{{tableItem.displayName}}">
+                                <a style="padding-left: 15px; padding-right: 0px;padding-top: 5px" href="#/{{'analysis'}}/menu/{{tables.name}}/favourite/{{tableItem.id}}/period/{{tableItem.period}}/orgunit/{{tableItem.orgUnit}}/dx/{{tableItem.dx}}/type/{{'table'}}/category/{{tableItem.filter}}" id="{{tableItem.id}}" class="text-success">
+                                    {{tableItem.displayName}}
+                                    <i class="fa fa-chevron-right pull-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </accordion-group>
 
-                        <li ng-repeat="tableItem in tables.values" style="padding: 0px 4px;font-size:12px;" class="menuitem {{statusClass[tableItem.id]}} listmenu" allstring="{{tableItem.displayName}}">
-                            <a style="padding-left: 0px; padding-right: 0px" href="#/{{'analysis'}}/menu/{{tables.name}}/favourite/{{tableItem.id}}/period/{{tableItem.period}}/orgunit/{{tableItem.orgUnit}}/dx/{{tableItem.dx}}/type/{{'table'}}/category/{{tableItem.filter}}" id="{{tableItem.id}}" class="text-success">
-                                {{tableItem.displayName}}
-                                <i class="fa fa-chevron-right pull-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </accordion-group>
+                </accordion>
             </accordion-group>
+
             <accordion-group heading="Documents" >
                 <ul class="nav nav-pills nav-stacked list-group document_panel" style="padding: 5px 5px;">
                 <li class="list-group-item" ng-repeat="document in documents">

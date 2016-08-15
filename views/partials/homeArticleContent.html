@@ -1,8 +1,7 @@
 <div class="row">
-    <!--{{tabContents}}-->
     <div class="tab-content" id="content">
         <div class="row" ng-if="!tabContents&&!contentsCounts[currentTabCapitaize]"><img src="images/holizontal_preloader.gif" ></div>
-        <div class="row " ng-repeat="content in tabContents" ng-show="content.category==currentTabCapitaize&&content.shown">
+        <div class="row " ng-repeat="content in tabContents track by $index" ng-show="content.category==currentTabCapitaize&&content.shown">
 
             <div >
                 <div  class="col-md-12  conteiner" ng-bind-html="content.content" >
@@ -10,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="row " ng-repeat="content in tabContents" ng-show="currentTabCapitaize=='All'&&content.shown">
+        <div class="row " ng-repeat="content in tabContents track by $index" ng-show="currentTabCapitaize=='All'&&content.shown">
             <div >
                 <div  class="col-md-12  conteiner" ng-bind-html="content.content" >
                 </div>
