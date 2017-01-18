@@ -391,6 +391,26 @@ chartServices.factory('chartsManager',function($timeout){
           break;
       }
     },
+      createCSV : function(analyticsObject, yAxisType,yAxisItems,xAxisType,xAxisItems,filterType,filterUid,title){
+          console.log('creation attempts is done!');
+          var chartService = this;
+          var headers=[""];
+          angular.forEach(chartService.prepareSingleCategories(analyticsObject,xAxisType,xAxisItems),function(column){
+              headers.push(column.name);
+          });
+          var rows = [];
+          angular.forEach(chartService.prepareSingleCategories(analyticsObject,yAxisType,yAxisItems),function(row){
+              var rowItem = {};
+              rowItem[rows.uid] = row.name;
+              angular.forEach(chartService.prepareSingleCategories(analyticsObject,xAxisType,xAxisItems),function(column){
+               rowItem[column.uid] = chartService.getDataValue(analyticsObject,xAxisType,column.uid,yAxisType,row.uid,filterType,filterUid);
+              });
+              rows.push(rowItem);
+          })
+
+          return {headers:headers,rows:rows};
+
+      },
 
     drawTable : function(analyticsObject, yAxisType,yAxisItems,xAxisType,xAxisItems,filterType,filterUid,title){
       console.log('table drawing attempts is done!');

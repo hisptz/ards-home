@@ -6,6 +6,7 @@
                 data-input-model="dataDimension"
                 multi-select="true"
                 data-output-model="data.outputData"
+                data-maximum-label="{{data.outputData.length}} data selected"
                 data-default-label="Select Data"
         >
         </multi-select-tree>
@@ -16,6 +17,7 @@
                 data-input-model="organisationUnits"
                 multi-select="true"
                 data-output-model="data.organisationUnitOutPut"
+                data-maximum-label="{{data.organisationUnitOutPut.length}} administrative units selected"
                 data-default-label="Select Administrative Units"
         >
         </multi-select-tree>
@@ -46,6 +48,7 @@
                 data-input-model="data.dataperiods"
                 multi-select="true"
                 data-output-model="data.outputPeriods"
+                data-maximum-label="{{data.outputPeriods.length}} periods selected"
                 data-default-label="Select Period"
         >
         </multi-select-tree>
@@ -58,6 +61,7 @@
                 data-input-model="categoryDimension"
                 multi-select="false"
                 data-output-model="data.outputCategory"
+                data-maximum-label="{{data.outputCategory.length}} categories selected"
                 data-default-label="Select Category"
         >
         </multi-select-tree>
@@ -78,7 +82,7 @@
         <a class="btn {{btnClass['pie'] ? 'btn-success' : 'btn-default'}}" title="Pie Chart" ng-click="chartSwitcher('pie','')"><img src="images/pie.png" style="width: 15px"></a>
         <a class="btn {{btnClass['stacked_column'] ? 'btn-success' : 'btn-default'}}" title="Stacked Chart" ng-click="chartSwitcher('stacked_column','')"><img src="images/bar-stacked.png" style="width: 15px"></a>
         <a class="btn {{btnClass['radar'] ? 'btn-success' : 'btn-default'}}" title="Spider Chart" ng-click="chartSwitcher('radar','')"><img src="images/radar.png" style="width: 15px"></a>
-        <a class="btn {{btnClass['csv'] ? 'btn-success' : 'btn-default'}}" title="Excel File" ng-click="chartSwitcher('csv','')"><img src="images/cvs.jpg" style="width: 15px"></a>
+        <a class="btn {{btnClass['csv'] ? 'btn-success' : 'btn-default'}}" title="Excel File"  lazy-load="true"  ng-csv="csvObject.rows" csv-header="csvObject.headers" field-separator="," filename="ards_data_analysis_{{current_date}}.csv"><img src="images/cvs.jpg" style="width: 15px"></a>
     </div>
 
 </div>

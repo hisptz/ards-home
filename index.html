@@ -3,8 +3,8 @@
     <head>
         <title>ARDS HOME</title>
 
-        <meta name="description" content="DHIS 2">
-        <meta name="keywords" content="DHIS 2">        
+        <meta name="description" content="ARDS">
+        <meta name="keywords" content="ARDS">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
@@ -41,7 +41,12 @@
             {
                 margin: 125px 15px 15px 10px!important;
             }
-
+            .navbar-inverse .navbar-brand {
+                color: #ffffff!important;
+            }
+            .navbar-inverse .navbar-nav > li > a {
+                color: #ffffff!important;
+            }
         </style>
     </head>
 
@@ -101,8 +106,7 @@
     <script type="text/javascript">
         window.dhis2 = window.dhis2 || {};
         dhis2.settings = dhis2.settings || {};
-        dhis2.settings.baseUrl = 'demo';
-        //          dhis2.settings.baseUrl = '../..';
+        dhis2.settings.baseUrl = 'migration';
     </script>
 
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/jQuery/jquery.min.js"></script>
@@ -178,6 +182,7 @@
     <script type="text/javascript" src="scripts/vendor/Highcharts/js/highcharts-3d.js"></script>
     <script type="text/javascript" src="scripts/vendor/Highcharts/js/highcharts-more.js"></script>
     <script type="text/javascript" src="scripts/vendor/highcharts-ng/dist/highcharts-ng.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/ng-csv.js"></script>
 
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/services.js"></script>
@@ -186,6 +191,7 @@
     <script type="text/javascript" src="scripts/directives.js"></script>
     <script type="text/javascript" src="scripts/controllers.js"></script>
     <script type="text/javascript" src="scripts/filters.js"></script>
+    <script type="text/javascript" src="scripts/vendor/monitorLoad.js"></script>
 
     <!-- Menu scripts -->
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.translate.js"></script>
