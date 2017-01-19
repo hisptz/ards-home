@@ -143,7 +143,16 @@ div.paging a.active
 .nav, .pagination, .carousel, .panel-title a { 
     cursor: pointer; 
 }
-
+nav .caret {
+    border-top-color: #fff !important;
+    border-bottom-color: #fff !important;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff!important;;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff!important;
+}
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;

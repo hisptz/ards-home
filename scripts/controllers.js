@@ -187,9 +187,11 @@ var homeControllers = angular.module('homeControllers', [])
         });
     }
 
+
     $scope.switchPage = function(){
-        window.location.href = '/migration/api/apps/cms/index.html';
+        window.location.href = "/"+dhis2.settings.baseUrl+'/api/apps/cms/index.html';
     }
+
     // Load favourites report tables
     $scope.getReportTable = function(){
         homeService.getReportTables().then(function(reportTables){

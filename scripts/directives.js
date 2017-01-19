@@ -230,7 +230,7 @@ homeDirectives.directive("homeTabs", function(){
 
 
             $scope.switchPage = function(){
-                window.location.href = '/demo/api/apps/cms/index.html';
+                window.location.href = '/'+dhis2.settings.baseUrl+'/api/apps/cms/index.html';
             }
 
 

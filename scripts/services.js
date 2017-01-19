@@ -478,7 +478,11 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
             if(arr.length != 1){
                 angular.forEach(menuarr,function(menuValue){
                     if(arr[0] == menuValue.name){
-                        menuValue.values.push({id:value.id,displayName:arr[1],shortName:arr[1].substring(0,20)+"...",period:home.preparePeriodFromReportTables(value),orgUnit:home.prepareOrgUnitFromReportTables(value),dx:home.prepareDxFromReportTables(value),filter:value.filterDimensions[0]});
+                        var filterDimension = "pe";
+                        if (value.filterDimensions.length > 0){
+                            filterDimension = value.filterDimensions[0];
+                        }
+                        menuValue.values.push({id:value.id,displayName:arr[1],shortName:arr[1].substring(0,20)+"...",period:home.preparePeriodFromReportTables(value),orgUnit:home.prepareOrgUnitFromReportTables(value),dx:home.prepareDxFromReportTables(value),filter:filterDimension});
                     }
                 })
 
