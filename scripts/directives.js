@@ -136,6 +136,17 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
                 });
             }
 
+            $scope.documents = null;
+
+            $scope.listDocuments = function(){
+                home.loadDocuments().then(function(data){
+
+                    $scope.documents = data.documents;
+                })
+            }
+
+            $scope.listDocuments();
+
 
             $scope.loadExternalLinks();
 

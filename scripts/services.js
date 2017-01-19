@@ -466,6 +466,13 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
         return $http.get(url).then(handleSuccess, handleError("Error Loading favourites"));
     }
 
+    home.loadDocuments = function(){
+        var url = "/api/documents.json?paging=false";
+        return $http({method:'GET',url:url}).then(handleSuccess, handleError("Error  updating external links"));
+
+    }
+
+
     home.prepareLeftMenu = function(reportTables){
 
         var mainmenu = new Array();

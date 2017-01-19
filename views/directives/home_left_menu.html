@@ -25,8 +25,8 @@
                 <ul class="nav nav-pills nav-stacked list-group document_panel" style="padding: 5px 5px;">
                 <li class="list-group-item" ng-repeat="document in documents">
                 <td>
-                <a title="View Document(Download)" target="_blank" href="{{document.url}}" class="text-success">
-                <span class="fa fa-globe"></span>&nbsp;&nbsp;{{document.name}}</a>
+                <a title="View Document(Download)" target="_blank" href="/api/documents/{{document.id}}/data" class="text-success">
+                <span class="fa fa-globe"></span>&nbsp;&nbsp;{{document.displayName}}</a>
                 </td>
                 </li>
                 </ul>
