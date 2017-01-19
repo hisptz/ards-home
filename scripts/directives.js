@@ -17,7 +17,7 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
             $scope.errors  = false;
             $scope.errorsThree  = false;
             $scope.errorSms  = false;
-
+            $scope.appBaserUrl = dhis2.settings.baseUrl;
 
             $scope.$watch('messageObject', function(newmessageObject, oldmessageObject){
 
@@ -87,7 +87,7 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
             $scope.error  = false;
             $scope.errorMessage  = "no document found";
 
-
+            $scope.appBaserUrl = dhis2.settings.baseUrl;
 
             $scope.openTab = {};
             $scope.openChildTab = {};
