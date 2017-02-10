@@ -173,17 +173,35 @@ var homeControllers = angular.module('homeControllers', [])
 
     $scope.loadTabs = function(){
         homeService.getTabs().then(function(response){
-            $scope.tabs = response;
+
+            if (response.success && response.success == false){
+                $scope.tabs = false;
+            }else{
+                $scope.tabs = response;
+            }
+
+        },function(error){
+
         });
+
     }
 
 
 
     var orderBy = $filter('orderBy');
+    $scope.noConnection = false;
     $scope.loadArticles = function(){
         homeService.getTabContent().then(function(response){
             $scope.tabContents = orderBy(response, 'order', false);
             $scope.contentsCounts = $scope.countShownContent($scope.tabContents);
+            $scope.noConnection = false;
+
+            if ( response.success !='undefined' && response.success == false ){
+                console.log("Inside execution  ",response);
+                $scope.noConnection = true;
+            }
+
+
         });
     }
 
@@ -195,6 +213,11 @@ var homeControllers = angular.module('homeControllers', [])
     // Load favourites report tables
     $scope.getReportTable = function(){
         homeService.getReportTables().then(function(reportTables){
+
+            if (reportTables&&!reportTables.success){
+                $scope.analysis = false;
+            }
+
             $scope.analysis = homeService.prepareLeftMenu(reportTables.reportTables);
         });
     }

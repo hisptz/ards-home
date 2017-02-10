@@ -17,6 +17,7 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
             $scope.errors  = false;
             $scope.errorsThree  = false;
             $scope.errorSms  = false;
+            $scope.errorMessage  = "No chart loaded";
             $scope.appBaserUrl = dhis2.settings.baseUrl;
 
             $scope.$watch('messageObject', function(newmessageObject, oldmessageObject){
@@ -30,6 +31,8 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
             $scope.$watch('chartObject', function(newChartObject, oldChartObject){
                 if(typeof newChartObject != "undefined"){
 
+                }else{
+                    $scope.errors = true;
                 }
             }, true);
 
@@ -89,10 +92,13 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
 
             $scope.appBaserUrl = dhis2.settings.baseUrl;
 
+
+
             $scope.openTab = {};
             $scope.openChildTab = {};
             $scope.statusClass = {};
             $scope.openTab['analysis'] = true;
+            $scope.openChildTab['Agriculture'] = true;
             $scope.openAccordion = function(parentElement,childElement){
 
                 if ( !$scope.openTab[parentElement] ) {
@@ -107,7 +113,6 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
                     $scope.statusClass = {};
                     $scope.openChildTab[childElement] = true;
                     $scope.statusClass[$scope.favourite] = "alert-success";
-                    console.log(childElement);
                 }
 
                 $location.path('/'+parentElement+'/menu/'+childElement);
@@ -120,14 +125,12 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
                 //$location.path('/'+scope.tab+'/menu/'+scope.menu);
             });
 
-
             $scope.loadExternalLinks = function(){
 
                 homeService.listExternalLink().then(function(response){
                     $scope.externalLinks = response;
                 });
             }
-
 
             $scope.loadExternalLinks = function(){
 
@@ -139,11 +142,26 @@ homeDirectives.directive("homeLeftMenu", ['homeService','utilityService','$locat
             $scope.documents = null;
 
             $scope.listDocuments = function(){
-                home.loadDocuments().then(function(data){
-
-                    $scope.documents = data.documents;
+                homeService.loadDocuments().then(function(data){
+                    $scope.documents = filterDocuments(data.documents);
                 })
             }
+
+            function filterDocuments(documents) {
+                var documentArray = [];
+                angular.forEach(documents, function (document) {
+
+                    if (document.contentType) {
+                        if (document.contentType.indexOf('image') >= 0) {
+
+                        } else {
+                            documentArray.push(document);
+                        }
+                    }
+                })
+                return documentArray;
+            }
+            
 
             $scope.listDocuments();
 
@@ -169,23 +187,34 @@ homeDirectives.directive("homeTabs", function(){
             $scope.error  = false;
             $scope.errorMessage  = "no chart found";
             $scope.homeTabActiveClass = {};
+            $scope.noConnection = false;
 
             $scope.$watch('tabContentObject', function(newtabContentObject, oldtabContentObject){
+
+
                 $scope.tabContents = newtabContentObject;
+
+
             }, true);
 
             $scope.$watch('tabObject', function(newtabObject, oldtabObject){
 
                 if(newtabObject!=null){
                     $scope.tabs = orderTabs(newtabObject);
-                    angular.forEach($scope.tabs,function(tab){
-                        var name = tab.value.toLowerCase();
-                        tab.name = name;
-                        $scope.homeTabActiveClass[tab.value] = {active:""};
-                        if(name==$scope.currentTab){
-                            $scope.homeTabActiveClass[tab.value].active = "current";
-                        }
-                    })
+
+                    if (!$scope.tabs){
+
+                    }else{
+                        angular.forEach($scope.tabs,function(tab){
+                            var name = tab.value.toLowerCase();
+                            tab.name = name;
+                            $scope.homeTabActiveClass[tab.value] = {active:""};
+                            if(name==$scope.currentTab){
+                                $scope.homeTabActiveClass[tab.value].active = "current";
+                            }
+                        })
+                    }
+
 
                 }
 
@@ -203,8 +232,9 @@ homeDirectives.directive("homeTabs", function(){
             }
 
             function orderTabs(tabArray){
+
                 var tabs = []
-                var tabs = [{value: "All",active:"current"}]
+                var tabs = [{value: "All",active:"current"}];
                 angular.forEach(tabArray,function(value){
                     if(value=="All"){
                         tabs[0].value=value;
@@ -235,6 +265,12 @@ homeDirectives.directive("homeTabs", function(){
                     }
 
                 })
+
+
+
+                if (tabArray.success !='undefined' && tabArray.success == false){
+                    return false;
+                }
 
                 return tabs;
             }

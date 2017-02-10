@@ -115,6 +115,17 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
         return $http({method:'POST',data:modifiedCharts,url:url}).then(handleSuccess, handleError("Error storing adding charts"));
     }
 
+ home.updateCharts = function(charts){
+        // save charts to storage
+        var modifiedCharts = [];
+        angular.forEach(charts,function(chartValue,chartIndex){
+            modifiedCharts.push({id:chartValue.id,name:chartValue.displayName});
+        });
+
+        var url = "../../../api/dataStore/chartsStorage/availableCharts";
+        return $http({method:'PUT',data:modifiedCharts,url:url}).then(handleSuccess, handleError("Error storing adding charts"));
+    }
+
 
     home.saveSelectedCharts = function(charts){
         // save charts to storage
@@ -467,7 +478,7 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
     }
 
     home.loadDocuments = function(){
-        var url = "/api/documents.json?paging=false";
+        var url = "/api/documents.json?paging=false&fields=*";
         return $http({method:'GET',url:url}).then(handleSuccess, handleError("Error  updating external links"));
 
     }

@@ -6,7 +6,7 @@
                     <i class="fa fa-spin fa-spinner" ></i>
                 </span>
                 <accordion close-others="oneAtATime">
-                    <accordion-group  class = "normal-accordion-group-header"  heading="{{tables.name}}" is-open="$root.openChildTab[tables.name]" ng-repeat="tables in reportTables">
+                    <accordion-group  class = "normal-accordion-group-header"  heading="{{tables.name}}" is-open="openChildTab[tables.name]" ng-repeat="tables in reportTables">
                         <ul class="nav nav-pills nav-stacked">
 
                             <li ng-repeat="tableItem in tables.values" style="padding: 0px;font-size:13px;" class="menuitem {{statusClass[tableItem.id]}} listmenu" allstring="{{tableItem.displayName}}">
@@ -23,7 +23,7 @@
 
             <accordion-group heading="Documents" class = "bold-accordion-group-header" >
                 <ul class="nav nav-pills nav-stacked list-group document_panel" style="padding: 5px 5px;">
-                <li class="list-group-item" ng-repeat="document in documents">
+                <li class="list-group-item" style="padding:2px 9px!important;" ng-repeat="document in documents">
                 <td>
                 <a title="View Document(Download)" target="_blank" href="/api/documents/{{document.id}}/data" class="text-success">
                 <span class="fa fa-globe"></span>&nbsp;&nbsp;{{document.displayName}}</a>
@@ -33,7 +33,7 @@
             </accordion-group>
             <accordion-group class = "bold-accordion-group-header" heading="Links">
                 <ul class="nav nav-pills nav-stacked list-group" style=" margin-left: 0;padding-left: 0em;text-indent: -0.1em;">
-                <li class="list-group-item" ng-repeat="external in externalLinks track by $index" >
+                <li class="list-group-item" style="padding:2px 9px!important;" ng-repeat="external in externalLinks track by $index" >
                 <a target="_blank" href="{{external.url}}" class="text-success">
                 <i class="fa fa-globe"></i>&nbsp;&nbsp;{{external.name}}</a>
                 </li>

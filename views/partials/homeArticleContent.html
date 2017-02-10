@@ -1,6 +1,7 @@
 <div class="row">
-    <div class="tab-content" id="content">
-        <div class="row" ng-if="!tabContents&&!contentsCounts[currentTabCapitaize]"><img src="images/holizontal_preloader.gif" ></div>
+
+    <div class="tab-content" ng-if="!noConnection" id="content">
+        <div class="row"  ng-if="!tabContents&&!contentsCounts[currentTabCapitaize]"><img src="images/holizontal_preloader.gif" ></div>
         <div class="row " ng-repeat="content in tabContents track by $index" ng-show="content.category==currentTabCapitaize&&content.shown">
 
             <div >
@@ -28,9 +29,8 @@
                 <p style="margin-top: 150px!important;font-weight:bolder;font-size: 27px;color: #cccccc;">{{'NO ANY ARTICLE CURRENTLY'}}</p>
             </div>
         </div>
-
     </div>
-
+    
 </div>
 
 
