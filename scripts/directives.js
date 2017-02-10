@@ -30,8 +30,9 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
 
             $scope.$watch('chartObject', function(newChartObject, oldChartObject){
                 if(typeof newChartObject != "undefined"){
-
+                    $scope.errors = false;
                 }else{
+                    // if ()
                     $scope.errors = true;
                 }
             }, true);

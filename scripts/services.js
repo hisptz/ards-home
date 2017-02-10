@@ -390,7 +390,7 @@ homeServices.service('homeService',['$http','DHIS2URL',function($http,DHIS2URL){
 
     home.loadChartStorage = function(){
 
-        var url = "../../../api/dataStore/chartsStorage/availableCharts";
+        var url = "../../../api/dataStore/chartsStorage/selectedCharts";
         return $http.get(url).then(handleSuccess, handleError("Error loading Messages"));
     }
 

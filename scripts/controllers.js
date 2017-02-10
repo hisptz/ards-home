@@ -98,33 +98,16 @@ var homeControllers = angular.module('homeControllers', [])
     };
 
 
-    $scope.loadRawCharts = function(){
-        homeService.getCharts().then(function(response){
-            var rowcharts = response.charts;
-            $scope.loadCharts().then(function(response){
+    $scope.loadCharts().then(function(response){
                 if(response){
-
-                    if(response.length==rowcharts.length){
-                        $scope.charts = response;//homeService.getSelectedCharts(response.chartsStorage);
-                    }else{
-                        homeService.saveCharts(rowcharts);
-                        if(response.length>0){
-                            homeService.updateCharts(rowcharts);
-                        }
-                    }
-
+                        $scope.charts = response;
                 }else{
-                    homeService.saveCharts(rowcharts);
-                }
 
+                }
 
             },function(error){
                 console.log(error);
             });
-        },function(error){
-
-        });
-    }
 
     $scope.loadCharts = function(){
         return homeService.loadChartStorage();
@@ -133,8 +116,6 @@ var homeControllers = angular.module('homeControllers', [])
 
     $scope.loadMessages();
     $scope.getReportTable();
-    $scope.loadRawCharts();
-    $scope.loadCharts();
 
 
     String.prototype.Capitalize = function() {
@@ -270,14 +251,7 @@ var homeControllers = angular.module('homeControllers', [])
         })
         return counts;
     }
-    $scope.loadCharts = function(){
-        homeService.getSelectedCharts().then(function(response){
-            $scope.charts = response;
 
-        },function(error){
-            $scope.errors  = true;
-        });
-    }
 
     if($routeParams.tabs =="analysis") {
         $scope.showAnalysis=true;
@@ -296,7 +270,6 @@ var homeControllers = angular.module('homeControllers', [])
     $scope.loadTabs();
     $scope.loadArticles();
     $scope.loadMessages();
-    $scope.loadCharts();
     $scope.getReportTable();
 
 })
@@ -336,38 +309,6 @@ var homeControllers = angular.module('homeControllers', [])
         };
 
 
-
-        $scope.loadRawCharts = function(){
-            homeService.getCharts().then(function(response){
-                var rowcharts = response.charts;
-                $scope.loadCharts().then(function(response){
-                    if(response){
-
-                        if(response.length==rowcharts.length){
-                            $scope.charts = response;//homeService.getSelectedCharts(response.chartsStorage);
-                        }else{
-                            homeService.saveCharts(rowcharts);
-                            if(response.length>0){
-                                homeService.updateCharts(rowcharts);
-                            }
-                        }
-
-                    }else{
-                        homeService.saveCharts(rowcharts);
-                    }
-
-
-                },function(error){
-                    console.log(error);
-                });
-            },function(error){
-
-            });
-        }
-
-        $scope.loadCharts = function(){
-            return homeService.loadChartStorage();
-        }
 
         $scope.getReportTable();
         $scope.loadMessages();
@@ -839,42 +780,10 @@ var homeControllers = angular.module('homeControllers', [])
             }
         }
 
-        $scope.loadRawCharts = function(){
-            homeService.getCharts().then(function(response){
-                var rowcharts = response.charts;
-                $scope.loadCharts().then(function(response){
-                    if(response){
 
-                        if(response.length==rowcharts.length){
-                            $scope.charts = response;//homeService.getSelectedCharts(response.chartsStorage);
-                        }else{
-                            homeService.saveCharts(rowcharts);
-                            if(response.length>0){
-                                homeService.updateCharts(rowcharts);
-                            }
-                        }
-
-                    }else{
-                        homeService.saveCharts(rowcharts);
-                    }
-
-
-                },function(error){
-                    console.log(error);
-                });
-            },function(error){
-
-            });
-        }
-
-        $scope.loadCharts = function(){
-            return homeService.loadChartStorage();
-        }
 
         $scope.getReportTable();
         $scope.loadMessages();
-        $scope.loadRawCharts();
-        $scope.loadCharts();
 
     });
 
