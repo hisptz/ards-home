@@ -570,6 +570,21 @@ homeServices.service('homeService', ['$http', 'DHIS2URL', function ($http, DHIS2
     }
 
 
+    home.checkSession = function(){
+        setInterval(function(){
+            $http.get("../../../api/me.json").then(function(myJsonObject){
+                if (typeof myJsonObject.data == "string"){
+                    window.location.href = "../../../dhis-web-commons/security/login.action";
+                }
+            },function(){
+
+            });
+        }, 2000);
+    }
+
+
+
+
     home.prepareLeftMenu = function (reportTables) {
 
         var mainmenu = new Array();

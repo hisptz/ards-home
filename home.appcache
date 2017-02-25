@@ -36,7 +36,7 @@ CACHE:
 ../../../dhis-web-commons/javascripts/angular/angular-animate.js
 ../../../dhis-web-commons/javascripts/angular/angular-sanitize.js
 ../../../dhis-web-commons/javascripts/angular/angular-messages.js
-../../../dhis-web-commons/javascripts/angular/ui-bootstrap.js
+scripts/vendor/ui-bootstrap.js
 
 ../../../dhis-web-commons/javascripts/moment/moment-with-langs.min.js
 

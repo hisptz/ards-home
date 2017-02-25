@@ -12,6 +12,8 @@ var homeControllers = angular.module('homeControllers', [])
         $rootScope.openChildTab[$routeParams.menuId] = true;
         $scope.showDataCriteria = true;
 
+        home.checkSession();
+
         $scope.interfacingClass="col-md-10";
 
         $scope.changeClass = function(){
