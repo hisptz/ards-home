@@ -211,11 +211,8 @@ homeDirectives.directive("homeTabs", function(){
 
 
             }, true);
-
-            $scope.$watch('tabObject', function(newtabObject, oldtabObject){
-
-                if(newtabObject!=null){
-                    $scope.tabs = orderTabs(newtabObject);
+            $scope.tabs =[ "Agriculture","LIvestock","Fisheries","Trade","Hidden"];
+            $scope.tabs = orderTabs($scope.tabs);
 
                     if (!$scope.tabs){
 
@@ -229,14 +226,6 @@ homeDirectives.directive("homeTabs", function(){
                             }
                         })
                     }
-
-
-                }
-
-
-            }, true);
-
-
 
             $scope.toggleableTab = function(tabIndex,tab){
                 angular.forEach($scope.tabs,function(tab){
