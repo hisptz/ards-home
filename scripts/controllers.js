@@ -16,7 +16,6 @@ var homeControllers = angular.module('homeControllers', [])
 
         $scope.changeClass = function(){
             $scope.interfacingClass = "col-md-10";
-            console.log($scope.interfacingClass);
         }
 
         $scope.$on('hideLeftBar',function(){
