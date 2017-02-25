@@ -325,7 +325,7 @@ homeServices.service('homeService', ['$http', 'DHIS2URL', function ($http, DHIS2
     }
 
     home.getMessages = function () {
-        return home.retrieveSetting();
+        return home.retrieveMessages();
     }
 
     home.addMessage = function (settingObject) {
@@ -344,7 +344,8 @@ homeServices.service('homeService', ['$http', 'DHIS2URL', function ($http, DHIS2
 
 
     home.getDataDimension = function (analytics, dataArray) {
-        var dx = analytics.metaData.dx;
+        if (!analytics.metaData){return false}
+        var dx = analytics.metaData.dx?analytics.metaData:null;
         var names = analytics.metaData.names;
         var datadimensions = [];
 
@@ -504,11 +505,10 @@ homeServices.service('homeService', ['$http', 'DHIS2URL', function ($http, DHIS2
     }
 
 
-    home.retrieveSetting = function () {
-
-        var url = "../../../api/systemSettings";
+    home.retrieveMessages = function(){
+        var url = "../../../api/dataStore/messages/textMessages";
         return $http.get(url).then(handleSuccess, handleError("Error loading Messages"));
-    }
+    };
 
 
     home.postSettings = function (dataObject) {
