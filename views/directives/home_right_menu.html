@@ -30,7 +30,9 @@
             <div class="row">
                 <div style="text-align: center;font-family: LiberationSans, arial, sans-serif;line-height: 140%;"><b> <u>Favourites Charts</u> </b></div><br/>
             </div>
-            <div  ng-repeat="chart in chartObject" ><a href="/{{appBaserUrl}}/dhis-web-visualizer/index.html?id={{chart.id}}" target="_blank" ><img src="/{{appBaserUrl}}/api/charts/{{chart.id}}/data?width=210&amp;height=250" title="Click to explore "></a><br/></div>
+            <div ng-show="hideChartDisplay" >
+                <div  ng-repeat="chart in chartObject" ><a href="/{{appBaserUrl}}/dhis-web-visualizer/index.html?id={{chart.id}}" target="_blank" ><img src="/{{appBaserUrl}}/api/charts/{{chart.id}}/data?width=210&amp;height=250" title="Click to explore "></a><br/></div>
+            </div>
             <div ng-show="!errors&&!chartObject"><img src="images/chartloader.gif" style="width:50px;margin-left: 40%;"></div>
             <div ng-show="errors" style="text-align: center;">
             <a class="alert alert-warning">{{errorMessage}} </a>

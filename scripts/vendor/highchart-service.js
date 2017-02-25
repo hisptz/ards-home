@@ -412,10 +412,11 @@ chartServices.factory('chartsManager',function($timeout){
 
       },
 
-    drawTable : function(analyticsObject, yAxisType,yAxisItems,xAxisType,xAxisItems,filterType,filterUid,title){
-      console.log('table drawing attempts is done!');
+    drawTable : function(analyticsObject, yAxisType,yAxisItems,xAxisType,xAxisItems,filterType,filterUid,title,type){
+      console.log(title);
       var chartService = this;
-      var table="<thead><tr><th></th>";
+      var table="<caption><h4>"+title+"</h4></caption>";
+      table+="<thead><tr><th></th>";
       angular.forEach(chartService.prepareSingleCategories(analyticsObject,xAxisType,xAxisItems),function(column){
         table+="<th>"+column.name+"</th>";
       });

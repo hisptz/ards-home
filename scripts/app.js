@@ -38,10 +38,6 @@ var home = angular.module('home',
             templateUrl: "views/home.html",
             controller: 'homeController'
         })
-        .when('/:tab/menu/:menuId/favourite/:favourite', {
-            templateUrl: "views/analysis.html",
-            controller: 'analysisController'
-        })
         .when('/:tab/menu/:menuId/favourite/:favourite/period/:period/orgunit/:orgunit/dx/:dx/type/:type/category/:category', {
             templateUrl: "views/analysis.html",
             controller: 'analysisDataController'

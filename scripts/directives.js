@@ -19,6 +19,7 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
             $scope.errorSms  = false;
             $scope.errorMessage  = "No chart loaded";
             $scope.appBaserUrl = dhis2.settings.baseUrl;
+            $scope.hideChartDisplay = false;
 
             $scope.$watch('messageObject', function(newmessageObject, oldmessageObject){
 
@@ -31,9 +32,22 @@ homeDirectives.directive("homeRightMenu", ['homeService',function(homeService){
             $scope.$watch('chartObject', function(newChartObject, oldChartObject){
                 if(typeof newChartObject != "undefined"){
                     $scope.errors = false;
+                    $scope.hideChartDisplay = false;
+                    if (newChartObject.success == false) {
+                        $scope.errors = true;
+                        $scope.hideChartDisplay = true;
+                        $scope.errorMessage  = "No chart,check network connection!";
+                    }
+
+                    if (newChartObject.length==0) {
+                        $scope.errors = true;
+                        $scope.hideChartDisplay = true;
+                        $scope.errorMessage  = "No chart loaded";
+                    }
+
                 }else{
-                    // if ()
-                    $scope.errors = true;
+
+
                 }
             }, true);
 
