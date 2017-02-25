@@ -59,7 +59,7 @@ CACHE:
 ../../../dhis-web-commons/javascripts/angular/plugins/angularLocalStorage.js
 ../../../dhis-web-commons/javascripts/angular/plugins/angular-translate.min.js
 ../../../dhis-web-commons/javascripts/angular/plugins/select.js
-../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.directives.js
+scripts/dhis2.angular.directives.js
 ../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.map.directive.js
 ../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.services.js
 ../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.filters.js

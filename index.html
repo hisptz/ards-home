@@ -68,6 +68,21 @@
             .navbar-inverse .navbar-nav > li > a {
                 color: #ffffff!important;
             }
+
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+            }
+
         </style>
     </head>
 
@@ -75,7 +90,7 @@
 
     <d2-header-bar></d2-header-bar>
     <span id="showLeftBar" class="hideInPrint" style="margin-top: 20px;z-index:20;">
-        <a href="javascript:dhis2.leftBar.showAnimated()" title="$i18n.getString('show_menu' )"><i class="fa fa-arrow-right leftBarIcon"></i></a>
+        <a href="javascript:dhis2.leftBar.showAnimated()" ng-click="changeClass()" title="$i18n.getString('show_menu' )"><i class="fa fa-arrow-right leftBarIcon"></i></a>
     </span>
 
 
@@ -93,7 +108,7 @@
 
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="{{interfacingClass}}">
             <div class="page main-page "  id="mainPage">
                 <div class="row" >
                     <div class="col-md-10">
@@ -181,7 +196,7 @@
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/angular/plugins/angularLocalStorage.js"></script>
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/angular/plugins/angular-translate.min.js"></script>
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/angular/plugins/select.js"></script>
-    <script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.directives.js"></script>
+    <script type="text/javascript" src="scripts/dhis2.angular.directives.js"></script>
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.map.directive.js"></script>
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.services.js"></script>
     <script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.angular.filters.js"></script>

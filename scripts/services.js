@@ -867,7 +867,7 @@ homeServices.service('homeService', ['$http', 'DHIS2URL', function ($http, DHIS2
                     default:
                         console.log(selectedOrganisationUnit);
                 }
-                // console.log(eval(localStorage.getItem('userOrganisationUnits')));
+
             }
 
         }

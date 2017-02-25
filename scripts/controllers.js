@@ -12,6 +12,21 @@ var homeControllers = angular.module('homeControllers', [])
         $rootScope.openChildTab[$routeParams.menuId] = true;
         $scope.showDataCriteria = true;
 
+        $scope.interfacingClass="col-md-10";
+
+        $scope.changeClass = function(){
+            $scope.interfacingClass = "col-md-10";
+            console.log($scope.interfacingClass);
+        }
+
+        $scope.$on('hideLeftBar',function(){
+            $scope.interfacingClass="col-md-12";
+        })
+
+        $scope.$on('extendLeftBar',function(){
+            $scope.interfacingClass="col-md-8";
+        })
+
         if ($routeParams.menuId) {
             $scope.tab = $routeParams.tab;
             $scope.menuId = $routeParams.menuId;
@@ -373,6 +388,8 @@ var homeControllers = angular.module('homeControllers', [])
         $rootScope.openChildTab = [];
         $rootScope.openChildTab[$routeParams.menuId] = true;
         $scope.showDataCriteria = true;
+
+
 
         if ($routeParams.menuId) {
             $scope.tab = $routeParams.tab;
